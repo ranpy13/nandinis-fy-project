@@ -1,6 +1,33 @@
 ## Summary
 
-Building a comprehensive crop modeling system that addresses yield prediction, disease detection, nutrient management, and weather impacts is best achieved through a modular, multi-task deep-learning architecture. You can develop specialized “sub-models” for each domain—plant disease detection with convolutional neural networks (CNNs), fertilizer response modeling using regression or tree-based learners, time-series weather-to-growth forecasting with LSTMs or temporal attention, and final yield estimation via a fusion network—and then integrate them into a single end-to-end neural network using shared layers, task-specific heads, and gating mechanisms. This approach leverages domain-specific expertise, improves interpretability, and often outperforms monolithic models by allowing each component to specialize before sharing knowledge through a unified representation.
+Building a comprehensive crop modeling system that addresses yield prediction, disease detection, nutrient management, and weather impacts is best achieved through a modular, multi-task deep-learning architecture. You can develop specialized "sub-models" for each domain—plant disease detection with convolutional neural networks (CNNs), fertilizer response modeling using regression or tree-based learners, time-series weather-to-growth forecasting with LSTMs or temporal attention, and final yield estimation via a fusion network—and then integrate them into a single end-to-end neural network using shared layers, task-specific heads, and gating mechanisms. This approach leverages domain-specific expertise, improves interpretability, and often outperforms monolithic models by allowing each component to specialize before sharing knowledge through a unified representation.
+
+## Table of Contents
+
+1. [Project Overview](#1-project-overview)
+2. [Data Collection and Preprocessing](#2-data-collection-and-preprocessing)
+   - [Plant Disease Data](#21-plant-disease-data)
+   - [Fertilizer Impact Data](#22-fertilizer-impact-data)
+   - [Weather and Growth Data](#23-weather-and-growth-data)
+   - [Yield Records](#24-yield-records)
+3. [Designing Individual Sub-Models](#3-designing-individual-sub-models)
+   - [Disease Detection CNN](#31-disease-detection-cnn)
+   - [Fertilizer Response Model](#32-fertilizer-response-model)
+   - [Weather-to-Growth LSTM](#33-weather-to-growth-lstm)
+   - [Yield Fusion Network](#34-yield-fusion-network)
+4. [Integrating via Multi-Task Learning](#4-integrating-via-multi-task-learning)
+5. [Technical Implementation](#5-technical-implementation)
+6. [Model Evaluation and Explainability](#6-model-evaluation-and-explainability)
+7. [Presentation and Deployment](#7-presentation-and-deployment)
+8. [Walkthrough](#8-walkthrough)
+   - [Project Structure](#1-project-structure)
+   - [Models Overview](#2-models-overview)
+   - [Datasets & DataLoaders](#3-datasets--dataloaders)
+   - [Training Strategy](#4-training-strategy)
+   - [Metrics and Evaluation](#5-metrics-and-evaluation)
+   - [Bonus: Streamlit App](#6-bonus-streamlit-app-optional-ui)
+   - [Tips for a Strong Report/Presentation](#7-tips-for-a-strong-reportpresentation)
+9. [References](#references)
 
 ---
 
@@ -15,7 +42,7 @@ A robust final-year project should include the following objectives:
    - **Yield Prediction**: A fusion network combining outputs from the above sub-models  
 
 2. **Integration Strategy**  
-   - **Multi-Task Learning (MTL)**: Share common layers for feature extraction, with separate output “heads” for each task  ([MtCro: multi-task deep learning framework improves multi-trait ...](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-024-01321-0?utm_source=chatgpt.com), [Crop yield prediction integrating genotype and weather variables ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC8211294/?utm_source=chatgpt.com)).  
+   - **Multi-Task Learning (MTL)**: Share common layers for feature extraction, with separate output "heads" for each task  ([MtCro: multi-task deep learning framework improves multi-trait ...](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-024-01321-0?utm_source=chatgpt.com), [Crop yield prediction integrating genotype and weather variables ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC8211294/?utm_source=chatgpt.com)).  
    - **Gating Mechanisms**: Dynamically weight sub-model contributions per sample  ([MtCro: multi-task deep learning framework improves multi-trait ...](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-024-01321-0?utm_source=chatgpt.com)).  
    - **Ensemble Fusion**: Stack or ensemble the specialized sub-models into a final meta-learner  ([Crops yield prediction based on machine learning models](https://www.sciencedirect.com/science/article/pii/S2772375522000168?utm_source=chatgpt.com)).  
 
@@ -89,7 +116,7 @@ A robust final-year project should include the following objectives:
 
 ## 6. Model Evaluation and Explainability
 
-- **Metrics Dashboard**: Track each task’s metrics separately and overall loss  
+- **Metrics Dashboard**: Track each task's metrics separately and overall loss  
 - **Explainability**:  
   - **Grad-CAM** for disease CNN to visualize leaf regions  ([MTDL-EPDCLD: A Multi-Task Deep-Learning-Based System for ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC10346417/?utm_source=chatgpt.com), [Construction of deep learning-based disease detection model in ...](https://www.nature.com/articles/s41598-023-34549-2?utm_source=chatgpt.com)).  
   - **SHAP** values for fertilizer and yield regression to understand feature importance  ([Can machine learning models provide accurate fertilizer ...](https://link.springer.com/article/10.1007/s11119-024-10136-x?utm_source=chatgpt.com), ["Can machine learning models provide accurate fertilizer ...](https://digitalcommons.unl.edu/ageconfacpub/270/?utm_source=chatgpt.com)).  
@@ -274,13 +301,12 @@ Create `app.py`:
 - Provide an ablation study (e.g., model without weather vs. with weather)
 - Add interpretability (Grad-CAM, SHAP)
 
----
 
-**References**
+## References
 
-1. C. M. S. Guo et al., “Crop yield prediction using machine learning: A systematic literature review,” *Computers and Electronics in Agriculture*, vol. 178, 105830, 2021  ([Crop yield prediction using machine learning: A systematic literature ...](https://www.sciencedirect.com/science/article/pii/S0168169920302301?utm_source=chatgpt.com)).  
-2. S. Kakimoto et al., “Can machine learning models provide accurate fertilizer response predictions?” *Precision Agriculture*, vol. 25, pp. 123–139, 2023  ([Can machine learning models provide accurate fertilizer ...](https://link.springer.com/article/10.1007/s11119-024-10136-x?utm_source=chatgpt.com), ["Can machine learning models provide accurate fertilizer ...](https://digitalcommons.unl.edu/ageconfacpub/270/?utm_source=chatgpt.com)).  
-3. R. B. Yang et al., “A systematic review of deep learning techniques for plant diseases,” *Artificial Intelligence Review*, 2024  ([A systematic review of deep learning techniques for plant diseases](https://link.springer.com/article/10.1007/s10462-024-10944-7?utm_source=chatgpt.com)).  
-4. M. R. Smith et al., “Crop yield prediction integrating weather and genotype using LSTM with attention,” *Plant Methods*, vol. 20, 2024  ([Crop yield prediction integrating genotype and weather variables ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC8211294/?utm_source=chatgpt.com)).  
-5. P. N. Patel et al., “MtCro: A multi-task deep learning framework for plant phenotypes,” *Plant Methods*, vol. 20, 34, 2025  ([MtCro: multi-task deep learning framework improves multi-trait ...](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-024-01321-0?utm_source=chatgpt.com)).  
-6. J. Doe et al., “Applications of machine learning and deep learning in agriculture,” *Computers and Electronics in Agriculture*, vol. 300, 104500, 2025  ([Applications of machine learning and deep learning in agriculture](https://www.sciencedirect.com/science/article/pii/S2949736125000338?utm_source=chatgpt.com)).
+1. C. M. S. Guo et al., "Crop yield prediction using machine learning: A systematic literature review," *Computers and Electronics in Agriculture*, vol. 178, 105830, 2021  ([Crop yield prediction using machine learning: A systematic literature ...](https://www.sciencedirect.com/science/article/pii/S0168169920302301?utm_source=chatgpt.com)).  
+2. S. Kakimoto et al., "Can machine learning models provide accurate fertilizer response predictions?" *Precision Agriculture*, vol. 25, pp. 123–139, 2023  ([Can machine learning models provide accurate fertilizer ...](https://link.springer.com/article/10.1007/s11119-024-10136-x?utm_source=chatgpt.com), ["Can machine learning models provide accurate fertilizer ...](https://digitalcommons.unl.edu/ageconfacpub/270/?utm_source=chatgpt.com)).  
+3. R. B. Yang et al., "A systematic review of deep learning techniques for plant diseases," *Artificial Intelligence Review*, 2024  ([A systematic review of deep learning techniques for plant diseases](https://link.springer.com/article/10.1007/s10462-024-10944-7?utm_source=chatgpt.com)).  
+4. M. R. Smith et al., "Crop yield prediction integrating weather and genotype using LSTM with attention," *Plant Methods*, vol. 20, 2024  ([Crop yield prediction integrating genotype and weather variables ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC8211294/?utm_source=chatgpt.com)).  
+5. P. N. Patel et al., "MtCro: A multi-task deep learning framework for plant phenotypes," *Plant Methods*, vol. 20, 34, 2025  ([MtCro: multi-task deep learning framework improves multi-trait ...](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-024-01321-0?utm_source=chatgpt.com)).  
+6. J. Doe et al., "Applications of machine learning and deep learning in agriculture," *Computers and Electronics in Agriculture*, vol. 300, 104500, 2025  ([Applications of machine learning and deep learning in agriculture](https://www.sciencedirect.com/science/article/pii/S2949736125000338?utm_source=chatgpt.com)).

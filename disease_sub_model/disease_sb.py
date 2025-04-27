@@ -3,16 +3,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 import torch
+import torch.nn.functional as F
+import torch.nn as nn
+import torchvision.transforms.functional as TF
 from torchvision import datasets, transforms, models
 from torch.utils.data.sampler import SubsetRandomSampler
-import torch.nn as nn
-import torch.nn.functional as F
 from torchsummary import summary
 
+from PIL import Image
 from datetime import datetime
-from logging import Logger
-
-logger = Logger("root")
+from utils.logger_util import setup_logger
+logger = setup_logger(logger_name= __name__)
 
 ## Import dataset
 transform = transforms.Compose(
@@ -95,7 +96,7 @@ class CNN(nn.Module):
         return out
     
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-logger.warn(f"using device: {device}")
+logger.warning(f"using device: {device}")
 
 model = CNN(targets_size)
 mod = model.to(device=device)
@@ -169,6 +170,63 @@ torch.save(model.state_dict(), 'plant_disease_model.pt')
 
 # loading th model
 targets_size = 39
-model
+model = CNN(targets_size)
+model.load_state_dict(torch.load("plant_disease_model.pt"))
+model.eval()
+
+
+## Plotting the loss
+plt.plot(train_losses, label="train_loss")
+plt.plot(validation_losses , label = 'validation_loss')
+plt.xlabel('No of Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.show()
+
+# accuracy
+def accuracy(loader):
+    n_correct = 0
+    n_total = 0
+
+    for inputs, targets in loader:
+        inputs, targets = inputs.to(device), targets.to(device)
+
+        outputs = model(inputs)
+
+        _, predictions = torch.max(outputs, 1)
+
+        n_correct += (predictions == targets).sum().item()
+        n_total += targets.shape[0]
+
+    acc = n_correct / n_total
+    return acc
     
+train_acc = accuracy(train_loader)
+test_acc = accuracy(test_loader)
+validation_acc = accuracy(validation_loader)
+
+logger.info(f"Train Accuracy : {train_acc}\nTest Accuracy : {test_acc}\nValidation Accuracy : {validation_acc}")
+
+
+## Single image prediction
+transform_index_to_disease = dataset.class_to_idx
+transform_index_to_disease = dict(
+    [(value, key) for key, value in transform_index_to_disease.items()]
+)
+
+data = pd.read_csv("disease_info.csv", encoding="cp1252")
+
+def single_prediction(image_path):
+    image = Image.open(image_path)
+    image = image.resize((224, 224))
+
+    input_data = TF.to_tensor(image)
+    input_data = input_data.view((-1, 3, 224, 224))
+    output = model(input_data)
+    output = output.detach().numpy()
+    
+    index = np.argmax(output)
+    logger.info("Original : {}", image_path[12:-4])
+    pred_csv = data["disease_name"][index]
+    logger.info(pred_csv)
     

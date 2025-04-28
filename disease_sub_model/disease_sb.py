@@ -10,7 +10,7 @@ from torchvision import datasets, transforms, models
 from torch.utils.data.sampler import SubsetRandomSampler
 from torchsummary import summary
 
-from typing import List, Tuple, Dict, Optional, Union
+from typing import Tuple, Dict, Optional
 from PIL import Image
 from datetime import datetime
 from utils.logger_util import setup_logger

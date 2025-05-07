@@ -1,7 +1,6 @@
+import os
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
 import xgboost as xgb
 
 from sklearn.tree import DecisionTreeClassifier
@@ -12,16 +11,16 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
-from __future__ import print_function
+from enum import Enum
 import pickle
 import requests
-import warnings
-from enum import Enum
-warnings.filterwarnings('ignore')
-
+from typing import Any, Dict, List, Optional, Tuple, Union
 from utils.logger_util import setup_logger
-logger = setup_logger(logger_name= __name__)
 
+logger = setup_logger(logger_name=__name__)
+
+MODELS_DIR = os.path.join(os.path.dirname(__file__), "models")
+CROP_DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "crop_recommendation.csv")
 
 class ModelName(Enum):
     DECISION_TREE = "Decision Tree"
@@ -31,189 +30,119 @@ class ModelName(Enum):
     RANDOM_FOREST = "Random Forest"
     XG_BOOST = "XG Boost"
 
+class WeatherModelManager:
+    """
+    Handles training, saving, loading, and prediction for crop recommendation models.
+    """
+    def __init__(self, data_path: str = CROP_DATA_PATH, models_dir: str = MODELS_DIR):
+        self.data_path = data_path
+        self.models_dir = models_dir
+        os.makedirs(self.models_dir, exist_ok=True)
+        self.models = {}
+        self.accuracies = {}
+        self._load_data()
 
-df = pd.read_csv('crop_recommendation.csv')
-sns.heatmap(df.corr(), annot= True)
+    def _load_data(self):
+        self.df = pd.read_csv(self.data_path)
+        self.features = self.df.drop(['label'], axis=1)
+        self.target = self.df['label']
+        self.Xtrain, self.Xtest, self.Ytrain, self.Ytest = train_test_split(
+            self.features, self.target, test_size=0.2, random_state=2
+        )
 
+    def train_all(self):
+        """Train all models and save them to disk."""
+        self._train_decision_tree()
+        self._train_naive_bayes()
+        self._train_svm()
+        self._train_logistic_regression()
+        self._train_random_forest()
+        self._train_xgboost()
 
-# Separating feature and target lables
-features = df.drop(['label'])
-target = df['label']
-labels = df['label']
+    def _save_model(self, model: Any, filename: str):
+        path = os.path.join(self.models_dir, filename)
+        with open(path, 'wb'):
+            pickle.dump(model, open(path, 'wb'))
+        logger.debug(f"Saved model to {path}")
 
-acc = []
-model = []
+    def _train_decision_tree(self):
+        model = DecisionTreeClassifier(criterion="entropy", random_state=42, max_depth=5)
+        model.fit(self.Xtrain, self.Ytrain)
+        self._evaluate_and_save(model, ModelName.DECISION_TREE, "DecisionTree.pkl")
 
-Xtrain, Xtest, Ytrain, Ytest = train_test_split(features, target, test_size= 0.2, random_state = 2)
+    def _train_naive_bayes(self):
+        model = GaussianNB()
+        model.fit(self.Xtrain, self.Ytrain)
+        self._evaluate_and_save(model, ModelName.NAIVE_BAYES, "NBClassifier.pkl")
 
+    def _train_svm(self):
+        model = SVC(gamma='auto')
+        model.fit(self.Xtrain, self.Ytrain)
+        self._evaluate_and_save(model, ModelName.SUPPORT_VECTOR_MACHINE, None)  # Not saved by default
 
-# Decision Tree
-DecisionTree = DecisionTreeClassifier(criterion= "entropy", random_state= 42, max_depth= 5)
+    def _train_logistic_regression(self):
+        model = LogisticRegression(random_state=42)
+        model.fit(self.Xtrain, self.Ytrain)
+        self._evaluate_and_save(model, ModelName.LOGISTIC_REGRESSION, "LogisticRegression.pkl")
 
-DecisionTree.fit(Xtrain, Ytrain)
+    def _train_random_forest(self):
+        model = RandomForestClassifier(n_estimators=20, random_state=42)
+        model.fit(self.Xtrain, self.Ytrain)
+        self._evaluate_and_save(model, ModelName.RANDOM_FOREST, "RandomForest.pkl")
 
-precicted_values = DecisionTree.predict(Xtest)
-x = accuracy_score(Ytest, precicted_values)
-logger.info(f"Accuracy with Decision Tree: {x}")
+    def _train_xgboost(self):
+        model = xgb.XGBClassifier()
+        model.fit(self.Xtrain, self.Ytrain)
+        self._evaluate_and_save(model, ModelName.XG_BOOST, "XGBoost.pkl")
 
-acc.append(x)
-model.append(ModelName.DECISION_TREE)
+    def _evaluate_and_save(self, model: Any, model_name: ModelName, filename: Optional[str]):
+        predicted = model.predict(self.Xtest)
+        acc = accuracy_score(self.Ytest, predicted)
+        self.models[model_name] = model
+        self.accuracies[model_name] = acc
+        logger.info(f"Accuracy for {model_name.value}: {acc}")
+        logger.info(f"Classification Report for {model_name.value}:\n{classification_report(self.Ytest, predicted)}")
+        if filename:
+            self._save_model(model, filename)
 
-logger.info(f"Classification Report: {classification_report(Ytest, precicted_values)}")
+    def load_model(self, model_name: ModelName) -> Any:
+        filename = {
+            ModelName.DECISION_TREE: "DecisionTree.pkl",
+            ModelName.NAIVE_BAYES: "NBClassifier.pkl",
+            ModelName.LOGISTIC_REGRESSION: "LogisticRegression.pkl",
+            ModelName.RANDOM_FOREST: "RandomForest.pkl",
+            ModelName.XG_BOOST: "XGBoost.pkl",
+        }.get(model_name)
+        if not filename:
+            raise ValueError(f"Model {model_name.value} is not saved or not supported for loading.")
+        path = os.path.join(self.models_dir, filename)
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"Model file {path} does not exist.")
+        with open(path, 'rb') as f:
+            model = pickle.load(f)
+        logger.debug(f"Loaded model {model_name.value} from {path}")
+        return model
 
-score = cross_val_score(DecisionTree, features, target, cv= 5)
-logger.info(f"Cross Validation Score for Decision Tree: {score}")
+    def predict(self, data: np.ndarray, model_name: ModelName) -> np.ndarray:
+        """
+        Predict using the specified model. Loads from disk if not in memory.
+        """
+        if model_name in self.models:
+            model = self.models[model_name]
+        else:
+            model = self.load_model(model_name)
+        return model.predict(data)
 
-# Saving trained Decision Tree model
-logger.debug("Saving pickel file for Decision Tree classifier...\n")
-DT_pkl_filename = "./models/DecisionTree.pkl"
-DT_model_pkl = open(DT_pkl_filename)
-pickle.dump(DecisionTree, DT_model_pkl)
-DT_model_pkl.close()
-logger.debug("Saved pickle file for Decision Tree Classifier.\n")
+    def get_accuracy(self, model_name: ModelName) -> float:
+        return self.accuracies.get(model_name, None)
 
-
-# Gaussain Naive Bayes
-
-NaiveBayes = GaussianNB()
-NaiveBayes.fit(Xtrain, Ytrain)
-
-predicted_values = NaiveBayes.predict(Xtest)
-x = accuracy_score(Ytest, predicted_values)
-logger.info(f"Accuracy score for Naive Bayes: {x}")
-
-acc.append(x)
-model.append(ModelName.NAIVE_BAYES)
-
-logger.info(f"Classfication Report for Naive Bayes: {classification_report(Ytest, precicted_values)}")
-
-score = cross_val_score(NaiveBayes, features, target, cv= 5)
-logger.info("Cross Validation Score for Naive Bayes: {}", score)
-
-# Saving pickle file
-logger.debug("Saving pickle file for Naive Bayes calssifier...\n")
-NB_pkl_filename = "./models/NBClassifier.pkl"
-NB_model_pkl = open(NB_pkl_filename, 'wb')
-pickle.dump(NaiveBayes, NB_model_pkl)
-NB_model_pkl.close()
-logger.debug("Saving complete for Naive Bayes calssifer.\n")
-
-
-# Support Vector Machines
-SVM = SVC(gamma= 'auto')
-SVM.fit(Xtrain, Ytrain)
-
-predicted_values = SVM.predict(Xtest)
-x = accuracy_score(Ytest, predicted_values)
-logger.info(f"Accuracy Score for Support Vector Machine: {x}")
-
-acc.append(x)
-model.append('SVM')
-logger.info(f"Classification Report for Support Vector Machine: {classification_report(Ytest, precicted_values)}")
-
-score = cross_val_score(SVM, features, target, cv= 5)
-logger.info(f"Cross Validation score for SVM: {score}")
-
-
-# Logistic Regression
-LogReg = LogisticRegression(random_state = 42)
-LogReg.fit(Xtrain, Ytrain)
-
-predicted_values = LogReg.predict(Xtest)
-x = accuracy_score(Ytest, predicted_values)
-logger.info(f"Accuracy Score for Logistic Regression: {x}")
-
-acc.append(x)
-model.append(ModelName.LOGISTIC_REGRESSION)
-logger.info(f"Classfication Report for Logistic Regression: {classification_report(Ytest, predicted_values)}")
-
-score = cross_val_score(LogReg, features, target, cv= 5)
-logger.info(f"Cross Validation Score for Logistic Regression: {score}")
-
-# Saving pickle file
-logger.debug("Saving pickle file for Logistic Regression...\n")
-LR_pkl_filename = "./models/LogisticRegression.pkl"
-LR_model_pkl = open(LR_pkl_filename, 'wb')
-pickle.dump(LogReg, LR_model_pkl)
-LR_model_pkl.close()
-logger.debug("Saved pickle file for Logistic Regression.\n")
-
-
-# Random Forest
-RandomForest = RandomForestClassifier(n_estimators= 20, random_state= 42)
-RandomForest.fit(Xtrain, Ytrain)
-
-predicted_values = RandomForest.predict(Xtest)
-
-x = accuracy_score(Ytest, predicted_values)
-logger.info(f"Accuracy Score for Random Forest: {x}")
-
-acc.append(x)
-model.append(ModelName.RANDOM_FOREST)
-
-logger.info(f"Classification Report for Random Forest: {classification_report(Ytest, predicted_values)}")
-
-# Saving to pickle file
-logger.debug("Saving pickle fiel for Random Forest...\n")
-RF_pkl_filename = "./models/RandomForest.pkl"
-RF_model_pkl = open(RF_pkl_filename, 'wb')
-pickle.dump(RandomForest, RF_model_pkl)
-RF_model_pkl.close()
-logger.debug("Saved pickle file for Random Forest Classifer.\n")
+    def get_all_accuracies(self) -> Dict[ModelName, float]:
+        return self.accuracies.copy()
 
 
-
-# XG Boost
-XB = xgb.XBGClassifier()
-XB.fit(Xtrain, Ytrain)
-
-precicted_values = XB.predict(Xtest)
-
-x = accuracy_score(Ytest, predicted_values)
-logger.info(f"Accuracy Score for XG-Boost: {x}")
-
-acc.append(x)
-model.append(ModelName.XG_BOOST)
-
-logger.info(f"Classification Report for XG Boost: {classification_report(Ytest, precicted_values)}")
-
-score = cross_val_score(XB, features, target, cv= 5)
-logger.info(f"Cross Validation Score for XG boost: {score}")
-
-# Saving to pickle file
-logger.debug("Saving pickle file for XG Boost...\n")
-XB_pkl_filename = "./models/XGBoost.pkl"
-XB_model_pkl = open(XB_pkl_filename, 'wb')
-pickle.dump(XB, XB_model_pkl)
-XB_model_pkl.close()
-logger.debug("Saved pickle file for XG Boost.\n")
-
-
-def make_prediction(data: np.array, model: ModelName):
-    assert(data is not None and data.size() != 0, "Empty Data")
-    
-    match model:
-        case ModelName.DECISION_TREE:
-            return DecisionTree.predict(data)
-        case ModelName.SUPPORT_VECTOR_MACHINE:
-            return SVM.predict(data)
-        case ModelName.LOGISTIC_REGRESSION:
-            return LogReg.predict(data)
-        case ModelName.NAIVE_BAYES:
-            return NaiveBayes.predict(data)
-        case ModelName.RANDOM_FOREST:
-            return RandomForest.predict(data)
-        case ModelName.XG_BOOST:
-            return XB.predict(data)
-        case _:
-            logger.error("Undefine model!!")
-    return
-        
-
-def fetch_weather(lat: float, long: float, *args):
+def fetch_weather(lat: float, long: float, *args: str) -> Dict[str, List[Any]]:
     """
     Fetch and return hourly weather data (e.g., temperature, humidity) from Open-Meteo API.
-
     :param lat: Latitude of the location
     :param long: Longitude of the location
     :param args: Weather variable names to fetch (e.g., 'temperature_2m', 'relative_humidity_2m')
@@ -221,7 +150,6 @@ def fetch_weather(lat: float, long: float, *args):
     """
     base_url = "https://api.open-meteo.com/v1/forecast"
     weather_vars = ",".join(args)
-
     params = {
         "latitude": lat,
         "longitude": long,
@@ -229,9 +157,7 @@ def fetch_weather(lat: float, long: float, *args):
         "forecast_days": 7,
         "timezone": "auto"
     }
-
     response = requests.get(base_url, params=params)
-
     if response.status_code == 200:
         data = response.json()
         result = {"time": data.get("hourly", {}).get("time", [])}
@@ -239,15 +165,5 @@ def fetch_weather(lat: float, long: float, *args):
             result[var] = data.get("hourly", {}).get(var, [])
         return result
     else:
-        logger.error("API request failed!!")
+        logger.error(f"API request failed with status code {response.status_code}: {response.text}")
         raise Exception(f"API request failed with status code {response.status_code}: {response.text}")
-
-
-if __name__ == "__main__":
-    plt.figure(figsize= (10, 5), dpi= 100)
-    plt.title("Accuracy Comparision")
-    plt.xlabel("Accuracy")
-    plt.ylabel("Algorithm")
-    sns.barplot(x= acc, y= model, palette= "dark")
-
-    accuracy_models = dict(zip(model, acc))

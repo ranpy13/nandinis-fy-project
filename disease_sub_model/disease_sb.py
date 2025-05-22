@@ -297,4 +297,81 @@ if __name__ == "__main__":
     # Make a prediction
     prediction = classifier.predict("path_to_image.jpg")
     logger.info(f"Predicted disease: {prediction}")
+
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn import metrics
+class DiseasePercentageModel:
+    def __init__(self):
+        self.model = LinearRegression()
+        self.training_data = None
+        self.x_train, self.X_test = None, None
+        self.y_train, self.Y_test = None, None
     
+    def split_training_data(self, training_data):
+        self.training_data = training_data
+        self.x_train, self.y_train, self.X_test, self.Y_test = train_test_split(training_data, test_size= 0.8)
+
+    def train_model(self):
+        self.model.fit(self.x_train, self.y_train)
+    
+    def test_model(self, data):
+        prediction_values = self.model.predict(self.X_test)
+        accuracy_score = metrics.accuracy_score(self.Y_test, prediction_values)
+        logger.info(f"Accuraccy Score for the Linear Model using the given dataset: {accuracy_score}")
+        
+    def predict(self, data_parameter):
+        return self.model.predict(data_parameter)
+
+
+import os
+from collections import Counter
+class DiseaseAnalyzer:
+    def __init__(self):
+        classifier = DiseaseClassifier(config)
+        model_name: str = classifier.config.model_save_path
+        if not os.path.exists(model_name):
+            raise FileNotFoundError(f"The model {model_name} isn't loaded or trained yet.")
+
+    def process(self, images: list[str]) -> float:
+        """
+        Takes the list of images as input and returns an estimate percentage of the spread of disease throughout.
+        
+        Parameters:
+            images (list of str): The path to the imgaes that are to be used for this estimation purpose.
+        
+        Returns:
+            float: The estimate percentage of the spread of the disease. 
+            
+        Raises:
+            FileNotFoundError: If the classification model at file_path does not exist.
+            pickle.UnpicklingError: If the pickle file is corrupt or cannot be unpickled.
+
+            Exception: For any other exceptions raised during the loading process.
+        
+        Example:
+            >>> model = load_pickle_model('model.pkl')
+            >>> prediction = model.predict([[1.2, 3.4, 5.6]])
+        """
+
+        if len(images) < 10:
+            raise ValueError("A mimium of 10 images are required for decent classification.")
+
+        disease_values = dict()
+        for image in images:
+            disease = classifier.predict(image)
+            if disease is not None:
+                disease_values[disease] += disease_values.get(disease, 0)
+        
+        
+        majority_element = lambda d: max(d.items(), key=lambda x: x[1])[0] if d else None
+        sample_probability = len(disease_values)/len(images)
+        disease_probability_model = DiseasePercentageModel()
+        probability_index = disease_probability_model.predict(data_parameter= {
+            "probability": sample_probability,
+            "crop_name": majority_element()
+        })
+        return probability_index
+
+        

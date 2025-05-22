@@ -9,14 +9,6 @@
         "documentation": {}
     },
     {
-        "label": "np",
-        "importPath": "numpy",
-        "description": "numpy",
-        "isExtraImport": true,
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -184,6 +176,22 @@
     },
     {
         "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -485,7 +493,7 @@
         "documentation": {}
     },
     {
-        "label": "accuracy_score",
+        "label": "mean_squared_error",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -493,7 +501,7 @@
         "documentation": {}
     },
     {
-        "label": "classification_report",
+        "label": "r2_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -623,6 +631,22 @@
         "documentation": {}
     },
     {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -644,14 +668,6 @@
         "description": "__future__",
         "isExtraImport": true,
         "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
-        "isExtraImport": true,
-        "detail": "dataclasses",
         "documentation": {}
     },
     {
@@ -1095,11 +1111,29 @@
         "documentation": {}
     },
     {
+        "label": "ModelMetrics",
+        "kind": 6,
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "peekOfCode": "class ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    r2_score: float\n    mean_squared_error: float\n    cross_val_scores: np.ndarray\nclass YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.\n    This class provides functionality to train and evaluate a linear regression model\n    for crop yield prediction based on environmental and agricultural parameters.",
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
         "label": "YieldPredictor",
         "kind": 6,
         "importPath": "yield_sub_model.crop_yield_sb",
         "description": "yield_sub_model.crop_yield_sb",
-        "peekOfCode": "class YieldPredictor:\n    def __init__(self) -> None:\n        self.training_data: Optional[pd.DataFrame] = None\n        self.x_train, self.y_train = None, None\n        self.X_test, self.Y_test = None, None\n        self.model = LinearRegression()\n        self.features = None\n        self.target = None\n    def load_data(self, data_path: Path):\n        self.training_data = pd.read_csv(data_path)",
+        "peekOfCode": "class YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.\n    This class provides functionality to train and evaluate a linear regression model\n    for crop yield prediction based on environmental and agricultural parameters.\n    Attributes:\n        training_data (Optional[pd.DataFrame]): The loaded training dataset\n        features (Optional[pd.DataFrame]): Selected features for prediction\n        target (Optional[pd.Series]): Target variable (Production)\n        model (LinearRegression): The trained linear regression model",
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "peekOfCode": "def main():\n    \"\"\"Main function to demonstrate usage of the YieldPredictor class.\"\"\"\n    try:\n        # Initialize predictor\n        predictor = YieldPredictor()\n        # Load data\n        predictor.load_data('./Burdwan_Crop.csv')\n        # Train model\n        predictor.train_model()\n        # Example prediction",
         "detail": "yield_sub_model.crop_yield_sb",
         "documentation": {}
     },
@@ -1108,7 +1142,7 @@
         "kind": 5,
         "importPath": "yield_sub_model.crop_yield_sb",
         "description": "yield_sub_model.crop_yield_sb",
-        "peekOfCode": "logger = setup_logger(__name__)\nclass YieldPredictor:\n    def __init__(self) -> None:\n        self.training_data: Optional[pd.DataFrame] = None\n        self.x_train, self.y_train = None, None\n        self.X_test, self.Y_test = None, None\n        self.model = LinearRegression()\n        self.features = None\n        self.target = None\n    def load_data(self, data_path: Path):",
+        "peekOfCode": "logger = setup_logger(__name__)\n@dataclass\nclass ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    r2_score: float\n    mean_squared_error: float\n    cross_val_scores: np.ndarray\nclass YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.",
         "detail": "yield_sub_model.crop_yield_sb",
         "documentation": {}
     },

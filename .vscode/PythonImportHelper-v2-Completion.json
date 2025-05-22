@@ -127,6 +127,46 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -399,30 +439,6 @@
         "documentation": {}
     },
     {
-        "label": "metrics",
-        "importPath": "sklearn",
-        "description": "sklearn",
-        "isExtraImport": true,
-        "detail": "sklearn",
-        "documentation": {}
-    },
-    {
-        "label": "metrics",
-        "importPath": "sklearn",
-        "description": "sklearn",
-        "isExtraImport": true,
-        "detail": "sklearn",
-        "documentation": {}
-    },
-    {
-        "label": "tree",
-        "importPath": "sklearn",
-        "description": "sklearn",
-        "isExtraImport": true,
-        "detail": "sklearn",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -440,11 +456,75 @@
         "documentation": {}
     },
     {
-        "label": "pyplot",
-        "importPath": "matplotlib",
-        "description": "matplotlib",
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
         "isExtraImport": true,
-        "detail": "matplotlib",
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -456,20 +536,35 @@
         "documentation": {}
     },
     {
-        "label": "seaborn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "seaborn",
-        "description": "seaborn",
-        "detail": "seaborn",
-        "documentation": {}
-    },
-    {
         "label": "KNeighborsClassifier",
         "importPath": "sklearn.neighbors",
         "description": "sklearn.neighbors",
         "isExtraImport": true,
         "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
         "documentation": {}
     },
     {
@@ -481,7 +576,7 @@
         "documentation": {}
     },
     {
-        "label": "classification_report",
+        "label": "accuracy_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -534,30 +629,6 @@
         "description": "sklearn.metrics",
         "isExtraImport": true,
         "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "DecisionTreeClassifier",
-        "importPath": "sklearn.tree",
-        "description": "sklearn.tree",
-        "isExtraImport": true,
-        "detail": "sklearn.tree",
-        "documentation": {}
-    },
-    {
-        "label": "DecisionTreeClassifier",
-        "importPath": "sklearn.tree",
-        "description": "sklearn.tree",
-        "isExtraImport": true,
-        "detail": "sklearn.tree",
-        "documentation": {}
-    },
-    {
-        "label": "DecisionTreeClassifier",
-        "importPath": "sklearn.tree",
-        "description": "sklearn.tree",
-        "isExtraImport": true,
-        "detail": "sklearn.tree",
         "documentation": {}
     },
     {
@@ -726,22 +797,6 @@
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
         "label": "pickle",
         "kind": 6,
         "isExtraImport": true,
@@ -757,38 +812,6 @@
         "importPath": "requests",
         "description": "requests",
         "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
-        "isExtraImport": true,
-        "detail": "dataclasses",
-        "documentation": {}
-    },
-    {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
-        "isExtraImport": true,
-        "detail": "dataclasses",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -907,173 +930,56 @@
         "documentation": {}
     },
     {
+        "label": "FertilizerType",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class FertilizerType(Enum):\n    \"\"\"Enumeration of available fertilizer types.\"\"\"\n    NPK_10_26_26 = \"10-26-26\"\n    NPK_14_35_14 = \"14-35-14\"\n    NPK_17_17_17 = \"17-17-17\"\n    NPK_20_20 = \"20-20\"\n    NPK_28_28 = \"28-28\"\n    DAP = \"DAP\"\n    UREA = \"Urea\"\n@dataclass",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "InputParameters",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class InputParameters:\n    \"\"\"Data class to store input parameters for fertilizer prediction.\"\"\"\n    temperature: float\n    humidity: float\n    moisture: float\n    soil_type: int\n    crop_type: int\n    nitrogen: float\n    potassium: float\n    phosphorous: float",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "ModelMetrics",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    accuracy: float\n    classification_report: str\n    training_accuracy: float\nclass FertilizerPredictor:\n    \"\"\"\n    A class to handle fertilizer recommendations using machine learning models.\n    This class provides functionality to train and evaluate multiple machine learning\n    models for fertilizer recommendation based on environmental and soil parameters.",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "FertilizerPredictor",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class FertilizerPredictor:\n    \"\"\"\n    A class to handle fertilizer recommendations using machine learning models.\n    This class provides functionality to train and evaluate multiple machine learning\n    models for fertilizer recommendation based on environmental and soil parameters.\n    Attributes:\n        data_path (Path): Path to the training data file\n        df (Optional[pd.DataFrame]): The loaded training dataset\n        encoders (Dict[str, LabelEncoder]): Dictionary of label encoders\n        models (Dict[str, object]): Dictionary of trained models",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "def main():\n    \"\"\"Main function to demonstrate usage of the FertilizerPredictor class.\"\"\"\n    try:\n        # Initialize predictor\n        predictor = FertilizerPredictor(\"FertilizerPrediction.csv\")\n        # Load data\n        predictor.load_data()\n        # Train models\n        predictor.train_models()\n        # Example prediction",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
         "label": "logger",
         "kind": 5,
         "importPath": "fertilizer_sub_model.fertilizer_sb",
         "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "logger = setup_logger(__name__)\ndf = pd.read_csv(\"FertilizerPrediction.csv\")\nlogger.debug(df.shape)\nlogger.debug(df.size)\nlogger.debug(df.describe())\nunique_values = df.apply(lambda x: len(x.unique()))\n# check for categorical attributes\ncat_col = []\nfor x in df.dtypes.index:\n    if df.dtypes[x] == 'object':",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "df = pd.read_csv(\"FertilizerPrediction.csv\")\nlogger.debug(df.shape)\nlogger.debug(df.size)\nlogger.debug(df.describe())\nunique_values = df.apply(lambda x: len(x.unique()))\n# check for categorical attributes\ncat_col = []\nfor x in df.dtypes.index:\n    if df.dtypes[x] == 'object':\n        cat_col.append(x)",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "unique_values",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "unique_values = df.apply(lambda x: len(x.unique()))\n# check for categorical attributes\ncat_col = []\nfor x in df.dtypes.index:\n    if df.dtypes[x] == 'object':\n        cat_col.append(x)\ncat_col\n# print the categorical columns\nfor col in cat_col:\n    print(col)",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "cat_col",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "cat_col = []\nfor x in df.dtypes.index:\n    if df.dtypes[x] == 'object':\n        cat_col.append(x)\ncat_col\n# print the categorical columns\nfor col in cat_col:\n    print(col)\n    print(df[col].value_counts())\n    print()",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "encode_soil",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "encode_soil = LabelEncoder()\ndf['SoilType'] = encode_soil.fit_transform(df['SoilType'])\n#creating the DataFrame\nSoil_Type = pd.DataFrame(zip(encode_soil.classes_,encode_soil.transform(encode_soil.classes_)),columns=['Original','Encoded'])\nSoil_Type = Soil_Type.set_index('Original')\nSoil_Type\n# encoding the crop type variables\nencode_crop =  LabelEncoder()\ndf['CropType'] = encode_crop.fit_transform(df['CropType'])\n#creating the DataFrame",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "df['SoilType']",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "df['SoilType'] = encode_soil.fit_transform(df['SoilType'])\n#creating the DataFrame\nSoil_Type = pd.DataFrame(zip(encode_soil.classes_,encode_soil.transform(encode_soil.classes_)),columns=['Original','Encoded'])\nSoil_Type = Soil_Type.set_index('Original')\nSoil_Type\n# encoding the crop type variables\nencode_crop =  LabelEncoder()\ndf['CropType'] = encode_crop.fit_transform(df['CropType'])\n#creating the DataFrame\nCrop_Type = pd.DataFrame(zip(encode_crop.classes_,encode_crop.transform(encode_crop.classes_)),columns=['Original','Encoded'])",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "Soil_Type",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "Soil_Type = pd.DataFrame(zip(encode_soil.classes_,encode_soil.transform(encode_soil.classes_)),columns=['Original','Encoded'])\nSoil_Type = Soil_Type.set_index('Original')\nSoil_Type\n# encoding the crop type variables\nencode_crop =  LabelEncoder()\ndf['CropType'] = encode_crop.fit_transform(df['CropType'])\n#creating the DataFrame\nCrop_Type = pd.DataFrame(zip(encode_crop.classes_,encode_crop.transform(encode_crop.classes_)),columns=['Original','Encoded'])\nCrop_Type = Crop_Type.set_index('Original')\nCrop_Type",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "Soil_Type",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "Soil_Type = Soil_Type.set_index('Original')\nSoil_Type\n# encoding the crop type variables\nencode_crop =  LabelEncoder()\ndf['CropType'] = encode_crop.fit_transform(df['CropType'])\n#creating the DataFrame\nCrop_Type = pd.DataFrame(zip(encode_crop.classes_,encode_crop.transform(encode_crop.classes_)),columns=['Original','Encoded'])\nCrop_Type = Crop_Type.set_index('Original')\nCrop_Type\n# encoding fertilizer name type variable",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "encode_crop",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "encode_crop =  LabelEncoder()\ndf['CropType'] = encode_crop.fit_transform(df['CropType'])\n#creating the DataFrame\nCrop_Type = pd.DataFrame(zip(encode_crop.classes_,encode_crop.transform(encode_crop.classes_)),columns=['Original','Encoded'])\nCrop_Type = Crop_Type.set_index('Original')\nCrop_Type\n# encoding fertilizer name type variable\nencode_ferti = LabelEncoder()\ndf['FertilizerName'] = encode_ferti.fit_transform(df['FertilizerName'])\n#creating the DataFrame",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "df['CropType']",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "df['CropType'] = encode_crop.fit_transform(df['CropType'])\n#creating the DataFrame\nCrop_Type = pd.DataFrame(zip(encode_crop.classes_,encode_crop.transform(encode_crop.classes_)),columns=['Original','Encoded'])\nCrop_Type = Crop_Type.set_index('Original')\nCrop_Type\n# encoding fertilizer name type variable\nencode_ferti = LabelEncoder()\ndf['FertilizerName'] = encode_ferti.fit_transform(df['FertilizerName'])\n#creating the DataFrame\nFertilizer = pd.DataFrame(zip(encode_ferti.classes_,encode_ferti.transform(encode_ferti.classes_)),columns=['Original','Encoded'])",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "Crop_Type",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "Crop_Type = pd.DataFrame(zip(encode_crop.classes_,encode_crop.transform(encode_crop.classes_)),columns=['Original','Encoded'])\nCrop_Type = Crop_Type.set_index('Original')\nCrop_Type\n# encoding fertilizer name type variable\nencode_ferti = LabelEncoder()\ndf['FertilizerName'] = encode_ferti.fit_transform(df['FertilizerName'])\n#creating the DataFrame\nFertilizer = pd.DataFrame(zip(encode_ferti.classes_,encode_ferti.transform(encode_ferti.classes_)),columns=['Original','Encoded'])\nFertilizer = Fertilizer.set_index('Original')\nFertilizer",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "Crop_Type",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "Crop_Type = Crop_Type.set_index('Original')\nCrop_Type\n# encoding fertilizer name type variable\nencode_ferti = LabelEncoder()\ndf['FertilizerName'] = encode_ferti.fit_transform(df['FertilizerName'])\n#creating the DataFrame\nFertilizer = pd.DataFrame(zip(encode_ferti.classes_,encode_ferti.transform(encode_ferti.classes_)),columns=['Original','Encoded'])\nFertilizer = Fertilizer.set_index('Original')\nFertilizer\n# it shows the count of each soil type ",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "encode_ferti",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "encode_ferti = LabelEncoder()\ndf['FertilizerName'] = encode_ferti.fit_transform(df['FertilizerName'])\n#creating the DataFrame\nFertilizer = pd.DataFrame(zip(encode_ferti.classes_,encode_ferti.transform(encode_ferti.classes_)),columns=['Original','Encoded'])\nFertilizer = Fertilizer.set_index('Original')\nFertilizer\n# it shows the count of each soil type \nplt.figure(figsize=(10,5))\nsns.countplot(x='SoilType', data = df)\n#it show the count of each crop type",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "df['FertilizerName']",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "df['FertilizerName'] = encode_ferti.fit_transform(df['FertilizerName'])\n#creating the DataFrame\nFertilizer = pd.DataFrame(zip(encode_ferti.classes_,encode_ferti.transform(encode_ferti.classes_)),columns=['Original','Encoded'])\nFertilizer = Fertilizer.set_index('Original')\nFertilizer\n# it shows the count of each soil type \nplt.figure(figsize=(10,5))\nsns.countplot(x='SoilType', data = df)\n#it show the count of each crop type\nplt.figure(figsize=(10,8))",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "Fertilizer",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "Fertilizer = pd.DataFrame(zip(encode_ferti.classes_,encode_ferti.transform(encode_ferti.classes_)),columns=['Original','Encoded'])\nFertilizer = Fertilizer.set_index('Original')\nFertilizer\n# it shows the count of each soil type \nplt.figure(figsize=(10,5))\nsns.countplot(x='SoilType', data = df)\n#it show the count of each crop type\nplt.figure(figsize=(10,8))\nsns.countplot(x='CropType', data = df)\nplt.figure(figsize=(8,5))",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "Fertilizer",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "Fertilizer = Fertilizer.set_index('Original')\nFertilizer\n# it shows the count of each soil type \nplt.figure(figsize=(10,5))\nsns.countplot(x='SoilType', data = df)\n#it show the count of each crop type\nplt.figure(figsize=(10,8))\nsns.countplot(x='CropType', data = df)\nplt.figure(figsize=(8,5))\nsns.countplot(x='FertilizerName', data = df)",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "classifier",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "classifier = KNeighborsClassifier(n_neighbors=10)\nclassifier.fit(x_train, y_train)\n# Predicting the Test set results\ny_pred = classifier.predict(x_test)\n#evaluating KNN for Classification\nacc=classifier.score(x_test,y_test)\nprint(\"Accuracy of testing set knn:\",acc)\n#evaluating KNN for Classification\nacc=classifier.score(x_train,y_train)\nprint(\"Accuracy of training set knn:\",acc)",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "y_pred",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "y_pred = classifier.predict(x_test)\n#evaluating KNN for Classification\nacc=classifier.score(x_test,y_test)\nprint(\"Accuracy of testing set knn:\",acc)\n#evaluating KNN for Classification\nacc=classifier.score(x_train,y_train)\nprint(\"Accuracy of training set knn:\",acc)\n# Calculating the Accuracy\nfrom sklearn import metrics\ny_pred=classifier.predict(x_test)",
-        "detail": "fertilizer_sub_model.fertilizer_sb",
-        "documentation": {}
-    },
-    {
-        "label": "clf",
-        "kind": 5,
-        "importPath": "fertilizer_sub_model.fertilizer_sb",
-        "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "clf = DecisionTreeClassifier(criterion = 'entropy', random_state = 0)\nclf.fit(x_train, y_train)\nprint(\"score of traing set:\",clf.score(x_train,y_train))\nprint(\"score of testing set:\",clf.score(x_test,y_test))\ny_pred=clf.predict(x_test)\nprint(\"accuracy:\",metrics.accuracy_score(y_test,y_pred))\n# Classification Report\nfrom sklearn.metrics import classification_report\nprint(classification_report(y_test, y_pred))\na=float(input(\"enter temparature value:\"))",
+        "peekOfCode": "logger = setup_logger(__name__)\nclass FertilizerType(Enum):\n    \"\"\"Enumeration of available fertilizer types.\"\"\"\n    NPK_10_26_26 = \"10-26-26\"\n    NPK_14_35_14 = \"14-35-14\"\n    NPK_17_17_17 = \"17-17-17\"\n    NPK_20_20 = \"20-20\"\n    NPK_28_28 = \"28-28\"\n    DAP = \"DAP\"\n    UREA = \"Urea\"",
         "detail": "fertilizer_sub_model.fertilizer_sb",
         "documentation": {}
     },

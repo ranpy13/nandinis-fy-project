@@ -127,6 +127,46 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -287,6 +327,22 @@
         "documentation": {}
     },
     {
+        "label": "setup_logger",
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "isExtraImport": true,
+        "detail": "utils.logger_util",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "train_test_split",
         "importPath": "sklearn.model_selection",
         "description": "sklearn.model_selection",
@@ -397,6 +453,182 @@
         "description": "collections",
         "isExtraImport": true,
         "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "KNeighborsClassifier",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
         "documentation": {}
     },
     {
@@ -517,70 +749,6 @@
         "documentation": {}
     },
     {
-        "label": "DecisionTreeClassifier",
-        "importPath": "sklearn.tree",
-        "description": "sklearn.tree",
-        "isExtraImport": true,
-        "detail": "sklearn.tree",
-        "documentation": {}
-    },
-    {
-        "label": "DecisionTreeClassifier",
-        "importPath": "sklearn.tree",
-        "description": "sklearn.tree",
-        "isExtraImport": true,
-        "detail": "sklearn.tree",
-        "documentation": {}
-    },
-    {
-        "label": "classification_report",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "accuracy_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "mean_squared_error",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "r2_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "classification_report",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "confusion_matrix",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
         "label": "GaussianNB",
         "importPath": "sklearn.naive_bayes",
         "description": "sklearn.naive_bayes",
@@ -626,22 +794,6 @@
         "description": "sklearn.ensemble",
         "isExtraImport": true,
         "detail": "sklearn.ensemble",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
-        "isExtraImport": true,
-        "detail": "enum",
         "documentation": {}
     },
     {
@@ -660,38 +812,6 @@
         "importPath": "requests",
         "description": "requests",
         "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
-        "isExtraImport": true,
-        "detail": "dataclasses",
-        "documentation": {}
-    },
-    {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
-        "isExtraImport": true,
-        "detail": "dataclasses",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -807,6 +927,60 @@
         "description": "disease_sub_model.disease_sb",
         "peekOfCode": "logger = setup_logger(logger_name=__name__)\nclass DiseaseClassifierConfig:\n    \"\"\"Configuration class for Disease Classifier\"\"\"\n    def __init__(\n        self,\n        image_size: int = 224,\n        batch_size: int = 64,\n        train_split: float = 0.85,\n        validation_split: float = 0.70,\n        dropout_rate: float = 0.4,",
         "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "FertilizerType",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class FertilizerType(Enum):\n    \"\"\"Enumeration of available fertilizer types.\"\"\"\n    NPK_10_26_26 = \"10-26-26\"\n    NPK_14_35_14 = \"14-35-14\"\n    NPK_17_17_17 = \"17-17-17\"\n    NPK_20_20 = \"20-20\"\n    NPK_28_28 = \"28-28\"\n    DAP = \"DAP\"\n    UREA = \"Urea\"\n@dataclass",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "InputParameters",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class InputParameters:\n    \"\"\"Data class to store input parameters for fertilizer prediction.\"\"\"\n    temperature: float\n    humidity: float\n    moisture: float\n    soil_type: int\n    crop_type: int\n    nitrogen: float\n    potassium: float\n    phosphorous: float",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "ModelMetrics",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    accuracy: float\n    classification_report: str\n    training_accuracy: float\nclass FertilizerPredictor:\n    \"\"\"\n    A class to handle fertilizer recommendations using machine learning models.\n    This class provides functionality to train and evaluate multiple machine learning\n    models for fertilizer recommendation based on environmental and soil parameters.",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "FertilizerPredictor",
+        "kind": 6,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "class FertilizerPredictor:\n    \"\"\"\n    A class to handle fertilizer recommendations using machine learning models.\n    This class provides functionality to train and evaluate multiple machine learning\n    models for fertilizer recommendation based on environmental and soil parameters.\n    Attributes:\n        data_path (Path): Path to the training data file\n        df (Optional[pd.DataFrame]): The loaded training dataset\n        encoders (Dict[str, LabelEncoder]): Dictionary of label encoders\n        models (Dict[str, object]): Dictionary of trained models",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "def main():\n    \"\"\"Main function to demonstrate usage of the FertilizerPredictor class.\"\"\"\n    try:\n        # Initialize predictor\n        predictor = FertilizerPredictor(\"FertilizerPrediction.csv\")\n        # Load data\n        predictor.load_data()\n        # Train models\n        predictor.train_models()\n        # Example prediction",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "peekOfCode": "logger = setup_logger(__name__)\nclass FertilizerType(Enum):\n    \"\"\"Enumeration of available fertilizer types.\"\"\"\n    NPK_10_26_26 = \"10-26-26\"\n    NPK_14_35_14 = \"14-35-14\"\n    NPK_17_17_17 = \"17-17-17\"\n    NPK_20_20 = \"20-20\"\n    NPK_28_28 = \"28-28\"\n    DAP = \"DAP\"\n    UREA = \"Urea\"",
+        "detail": "fertilizer_sub_model.fertilizer_sb",
         "documentation": {}
     },
     {

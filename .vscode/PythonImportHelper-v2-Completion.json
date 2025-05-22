@@ -287,6 +287,119 @@
         "documentation": {}
     },
     {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "metrics",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "argparse",
         "kind": 6,
         "isExtraImport": true,
@@ -302,15 +415,6 @@
         "importPath": "glob",
         "description": "glob",
         "detail": "glob",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
         "documentation": {}
     },
     {
@@ -429,54 +533,6 @@
         "documentation": {}
     },
     {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "cross_val_score",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "cross_val_score",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "cross_val_score",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
         "label": "classification_report",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
@@ -554,30 +610,6 @@
         "description": "sklearn.svm",
         "isExtraImport": true,
         "detail": "sklearn.svm",
-        "documentation": {}
-    },
-    {
-        "label": "LogisticRegression",
-        "importPath": "sklearn.linear_model",
-        "description": "sklearn.linear_model",
-        "isExtraImport": true,
-        "detail": "sklearn.linear_model",
-        "documentation": {}
-    },
-    {
-        "label": "LinearRegression",
-        "importPath": "sklearn.linear_model",
-        "description": "sklearn.linear_model",
-        "isExtraImport": true,
-        "detail": "sklearn.linear_model",
-        "documentation": {}
-    },
-    {
-        "label": "LogisticRegression",
-        "importPath": "sklearn.linear_model",
-        "description": "sklearn.linear_model",
-        "isExtraImport": true,
-        "detail": "sklearn.linear_model",
         "documentation": {}
     },
     {
@@ -738,6 +770,24 @@
         "importPath": "disease_sub_model.disease_sb",
         "description": "disease_sub_model.disease_sb",
         "peekOfCode": "class DiseaseClassifier:\n    \"\"\"Main class for disease classification\"\"\"\n    def __init__(self, config: Optional[DiseaseClassifierConfig] = None):\n        self.config = config or DiseaseClassifierConfig()\n        self.device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n        logger.warning(f\"Using device: {self.device}\")\n        self.model = None\n        self.dataset = DiseaseDataset(self.config)\n        self.disease_info = None\n    def train(self, dataset_path: str) -> Tuple[np.ndarray, np.ndarray]:",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseasePercentageModel",
+        "kind": 6,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "class DiseasePercentageModel:\n    def __init__(self):\n        self.model = LinearRegression()\n        self.training_data = None\n        self.x_train, self.X_test = None, None\n        self.y_train, self.Y_test = None, None\n    def split_training_data(self, training_data):\n        self.training_data = training_data\n        self.x_train, self.y_train, self.X_test, self.Y_test = train_test_split(training_data, test_size= 0.8)\n    def train_model(self):",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseAnalyzer",
+        "kind": 6,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "class DiseaseAnalyzer:\n    def __init__(self):\n        classifier = DiseaseClassifier(config)\n        model_name: str = classifier.config.model_save_path\n        if not os.path.exists(model_name):\n            raise FileNotFoundError(f\"The model {model_name} isn't loaded or trained yet.\")\n    def process(self, images: list[str]) -> float:\n        \"\"\"\n        Takes the list of images as input and returns an estimate percentage of the spread of disease throughout.\n        Parameters:",
         "detail": "disease_sub_model.disease_sb",
         "documentation": {}
     },

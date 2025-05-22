@@ -123,7 +123,7 @@ class WeatherModelManager:
         logger.debug(f"Loaded model {model_name.value} from {path}")
         return model
 
-    def predict(self, data: np.ndarray, model_name: ModelName) -> np.ndarray:
+    def predict_best_fit(self, data: np.ndarray, model_name: ModelName) -> np.ndarray:
         """
         Predict using the specified model. Loads from disk if not in memory.
         """
@@ -132,6 +132,20 @@ class WeatherModelManager:
         else:
             model = self.load_model(model_name)
         return model.predict(data)
+    
+    def predict(self, crop_name: str, input_data: np.ndarray, model_name: ModelName) -> float:
+        """
+        Predict the fit probability using the specified model. Loads from disk if not in memory.
+        """
+        if model_name in self.models:
+            model = self.models[model_name]
+        else:
+            mode = self.load_model(model_name)
+        
+        fit_percentages = model.predict_proba([input_data])[0]
+        crop_names = model.classes_
+        crop_fit = dict(zip(crop_names, fit_percentages)).get(crop_name, 0.0)
+        return crop_fit
 
     def get_accuracy(self, model_name: ModelName) -> float:
         return self.accuracies.get(model_name, None)

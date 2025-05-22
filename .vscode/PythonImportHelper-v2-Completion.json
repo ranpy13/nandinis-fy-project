@@ -1,0 +1,1275 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "torchvision.transforms.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision.transforms.functional",
+        "description": "torchvision.transforms.functional",
+        "detail": "torchvision.transforms.functional",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "transforms",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "SubsetRandomSampler",
+        "importPath": "torch.utils.data.sampler",
+        "description": "torch.utils.data.sampler",
+        "isExtraImport": true,
+        "detail": "torch.utils.data.sampler",
+        "documentation": {}
+    },
+    {
+        "label": "summary",
+        "importPath": "torchsummary",
+        "description": "torchsummary",
+        "isExtraImport": true,
+        "detail": "torchsummary",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "isExtraImport": true,
+        "detail": "utils.logger_util",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "isExtraImport": true,
+        "detail": "utils.logger_util",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "isExtraImport": true,
+        "detail": "utils.logger_util",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "isExtraImport": true,
+        "detail": "utils.logger_util",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "winreg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "winreg",
+        "description": "winreg",
+        "detail": "winreg",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "logging.config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "xgboost",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xgboost",
+        "description": "xgboost",
+        "detail": "xgboost",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianNB",
+        "importPath": "sklearn.naive_bayes",
+        "description": "sklearn.naive_bayes",
+        "isExtraImport": true,
+        "detail": "sklearn.naive_bayes",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianNB",
+        "importPath": "sklearn.naive_bayes",
+        "description": "sklearn.naive_bayes",
+        "isExtraImport": true,
+        "detail": "sklearn.naive_bayes",
+        "documentation": {}
+    },
+    {
+        "label": "SVC",
+        "importPath": "sklearn.svm",
+        "description": "sklearn.svm",
+        "isExtraImport": true,
+        "detail": "sklearn.svm",
+        "documentation": {}
+    },
+    {
+        "label": "SVC",
+        "importPath": "sklearn.svm",
+        "description": "sklearn.svm",
+        "isExtraImport": true,
+        "detail": "sklearn.svm",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "pkgutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pkgutil",
+        "description": "pkgutil",
+        "detail": "pkgutil",
+        "documentation": {}
+    },
+    {
+        "label": "importlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "importlib",
+        "description": "importlib",
+        "detail": "importlib",
+        "documentation": {}
+    },
+    {
+        "label": "b85decode",
+        "importPath": "base64",
+        "description": "base64",
+        "isExtraImport": true,
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseClassifierConfig",
+        "kind": 6,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "class DiseaseClassifierConfig:\n    \"\"\"Configuration class for Disease Classifier\"\"\"\n    def __init__(\n        self,\n        image_size: int = 224,\n        batch_size: int = 64,\n        train_split: float = 0.85,\n        validation_split: float = 0.70,\n        dropout_rate: float = 0.4,\n        learning_rate: float = 0.001,",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseDataset",
+        "kind": 6,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "class DiseaseDataset:\n    \"\"\"Class to handle dataset operations\"\"\"\n    def __init__(self, config: DiseaseClassifierConfig):\n        self.config = config\n        self.transform = transforms.Compose([\n            transforms.Resize(255),\n            transforms.CenterCrop(config.image_size),\n            transforms.ToTensor()\n        ])\n        self.dataset = None",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseCNN",
+        "kind": 6,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "class DiseaseCNN(nn.Module):\n    \"\"\"CNN model for disease classification\"\"\"\n    def __init__(self, num_classes: int, config: DiseaseClassifierConfig):\n        super(DiseaseCNN, self).__init__()\n        self.config = config\n        channels = [3, 32, 64, 128, 256]\n        layers = []\n        for i in range(len(channels) - 1):\n            in_ch = channels[i]\n            out_ch = channels[i + 1]",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseClassifier",
+        "kind": 6,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "class DiseaseClassifier:\n    \"\"\"Main class for disease classification\"\"\"\n    def __init__(self, config: Optional[DiseaseClassifierConfig] = None):\n        self.config = config or DiseaseClassifierConfig()\n        self.device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n        logger.warning(f\"Using device: {self.device}\")\n        self.model = None\n        self.dataset = DiseaseDataset(self.config)\n        self.disease_info = None\n    def train(self, dataset_path: str) -> Tuple[np.ndarray, np.ndarray]:",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "plot_losses",
+        "kind": 2,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "def plot_losses(train_losses: np.ndarray, validation_losses: np.ndarray) -> None:\n    \"\"\"Plot training and validation losses\"\"\"\n    plt.plot(train_losses, label=\"train_loss\")\n    plt.plot(validation_losses, label=\"validation_loss\")\n    plt.xlabel('No of Epochs')\n    plt.ylabel('Loss')\n    plt.legend()\n    plt.show()\n# Example usage\nif __name__ == \"__main__\":",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "peekOfCode": "logger = setup_logger(logger_name=__name__)\nclass DiseaseClassifierConfig:\n    \"\"\"Configuration class for Disease Classifier\"\"\"\n    def __init__(\n        self,\n        image_size: int = 224,\n        batch_size: int = 64,\n        train_split: float = 0.85,\n        validation_split: float = 0.70,\n        dropout_rate: float = 0.4,",
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "Tee",
+        "kind": 6,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "class Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except OSError:\n                pass\n        tee_f.write(what)",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_root_hkey",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU\n        return winreg.HKEY_CURRENT_USER",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "create_shortcut",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def create_shortcut(\n    path, description, filename, arguments=\"\", workdir=\"\", iconpath=\"\", iconindex=0\n):\n    import pythoncom\n    from win32com.shell import shell\n    ilink = pythoncom.CoCreateInstance(\n        shell.CLSID_ShellLink,\n        None,\n        pythoncom.CLSCTX_INPROC_SERVER,\n        shell.IID_IShellLink,",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_special_folder_path",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_special_folder_path(path_name):\n    from win32com.shell import shell, shellcon\n    for maybe in \"\"\"\n        CSIDL_COMMON_STARTMENU CSIDL_STARTMENU CSIDL_COMMON_APPDATA\n        CSIDL_LOCAL_APPDATA CSIDL_APPDATA CSIDL_COMMON_DESKTOPDIRECTORY\n        CSIDL_DESKTOPDIRECTORY CSIDL_COMMON_STARTUP CSIDL_STARTUP\n        CSIDL_COMMON_PROGRAMS CSIDL_PROGRAMS CSIDL_PROGRAM_FILES_COMMON\n        CSIDL_PROGRAM_FILES CSIDL_FONTS\"\"\".split():\n        if maybe == path_name:\n            csidl = getattr(shellcon, maybe)",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "CopyTo",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def CopyTo(desc, src, dest):\n    import win32api\n    import win32con\n    while 1:\n        try:\n            win32api.CopyFile(src, dest, 0)\n            return\n        except win32api.error as details:\n            if details.winerror == 5:  # access denied - user not admin.\n                raise",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "LoadSystemModule",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def LoadSystemModule(lib_dir, modname):\n    # See if this is a debug build.\n    import importlib.machinery\n    import importlib.util\n    suffix = \"_d\" if \"_d.pyd\" in importlib.machinery.EXTENSION_SUFFIXES else \"\"\n    filename = \"%s%d%d%s.dll\" % (\n        modname,\n        sys.version_info.major,\n        sys.version_info.minor,\n        suffix,",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "SetPyKeyVal",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def SetPyKeyVal(key_name, value_name, value):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.CreateKey(root_key, key_name)\n        try:\n            winreg.SetValueEx(my_key, value_name, 0, winreg.REG_SZ, value)\n            if verbose:\n                print(f\"-> {root_key_name}\\\\{key_name}[{value_name}]={value!r}\")\n        finally:",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "UnsetPyKeyVal",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def UnsetPyKeyVal(key_name, value_name, delete_key=False):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.OpenKey(root_key, key_name, 0, winreg.KEY_SET_VALUE)\n        try:\n            winreg.DeleteValue(my_key, value_name)\n            if verbose:\n                print(f\"-> DELETE {root_key_name}\\\\{key_name}[{value_name}]\")\n        finally:",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterCOMObjects",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterCOMObjects(register=True):\n    import win32com.server.register\n    if register:\n        func = win32com.server.register.RegisterClasses\n    else:\n        func = win32com.server.register.UnregisterClasses\n    flags = {}\n    if not verbose:\n        flags[\"quiet\"] = 1\n    for module, klass_name in com_modules:",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterHelpFile",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterHelpFile(register=True, lib_dir=None):\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    if register:\n        # Register the .chm help file.\n        chm_file = os.path.join(lib_dir, \"PyWin32.chm\")\n        if os.path.isfile(chm_file):\n            # This isn't recursive, so if 'Help' doesn't exist, we croak\n            SetPyKeyVal(\"Help\", None, None)\n            SetPyKeyVal(\"Help\\\\Pythonwin Reference\", None, chm_file)",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterPythonwin",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterPythonwin(register=True, lib_dir=None):\n    \"\"\"Add (or remove) Pythonwin to context menu for python scripts.\n    ??? Should probably also add Edit command for pys files also.\n    Also need to remove these keys on uninstall, but there's no function\n    to add registry entries to uninstall log ???\n    \"\"\"\n    import os\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    classes_root = get_root_hkey()",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_shortcuts_folder",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_shortcuts_folder():\n    if get_root_hkey() == winreg.HKEY_LOCAL_MACHINE:\n        try:\n            fldr = get_special_folder_path(\"CSIDL_COMMON_PROGRAMS\")\n        except OSError:\n            # No CSIDL_COMMON_PROGRAMS on this platform\n            fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")\n    else:\n        # non-admin install - always goes in this user's start menu.\n        fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_system_dir",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_system_dir():\n    import win32api  # we assume this exists.\n    try:\n        import pythoncom\n        import win32process\n        from win32com.shell import shell, shellcon\n        try:\n            if win32process.IsWow64Process():\n                return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEMX86)\n            return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEM)",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "fixup_dbi",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def fixup_dbi():\n    # We used to have a dbi.pyd with our .pyd files, but now have a .py file.\n    # If the user didn't uninstall, they will find the .pyd which will cause\n    # problems - so handle that.\n    import win32api\n    import win32con\n    pyd_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi.pyd\")\n    pyd_d_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi_d.pyd\")\n    py_name = os.path.join(os.path.dirname(win32con.__file__), \"dbi.py\")\n    for this_pyd in (pyd_name, pyd_d_name):",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def install(lib_dir):\n    import traceback\n    # The .pth file is now installed as a regular file.\n    # Create the .pth file in the site-packages dir, and use only relative paths\n    # We used to write a .pth directly to sys.prefix - clobber it.\n    if os.path.isfile(os.path.join(sys.prefix, \"pywin32.pth\")):\n        os.unlink(os.path.join(sys.prefix, \"pywin32.pth\"))\n    # The .pth may be new and therefore not loaded in this session.\n    # Setup the paths just in case.\n    for name in \"win32 win32\\\\lib Pythonwin\".split():",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def uninstall(lib_dir):\n    # First ensure our system modules are loaded from pywin32_system, so\n    # we can remove the ones we copied...\n    LoadSystemModule(lib_dir, \"pywintypes\")\n    LoadSystemModule(lib_dir, \"pythoncom\")\n    try:\n        RegisterCOMObjects(False)\n    except Exception as why:\n        print(f\"Failed to unregister COM objects: {why}\")\n    try:",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verify_destination",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def verify_destination(location: str) -> str:\n    location = os.path.abspath(location)\n    if not os.path.isdir(location):\n        raise argparse.ArgumentTypeError(\n            f'Path \"{location}\" is not an existing directory!'\n        )\n    return location\ndef main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python -m pywin32_postinstall -install\n    * or (shorter but you don't have control over which python environment is used)\n    > pywin32_postinstall -install\n    You need to execute this script, with a '-install' parameter,\n    to ensure the environment is setup correctly to install COM objects, services, etc.",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "tee_f",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "tee_f = open(\n    os.path.join(\n        tempfile.gettempdir(),  # Send output somewhere so it can be found if necessary...\n        \"pywin32_postinstall.log\",\n    ),\n    \"w\",\n)\nclass Tee:\n    def __init__(self, file):\n        self.f = file",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stderr",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stderr = Tee(sys.stderr)\nsys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stdout",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "com_modules",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "com_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0\n# Verbosity of output messages.",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "silent",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "silent = 0\n# Verbosity of output messages.\nverbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "verbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "root_key_name",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_postinstall",
+        "description": "Scripts.pywin32_postinstall",
+        "peekOfCode": "root_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU",
+        "detail": "Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "run_test",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_testall",
+        "description": "Scripts.pywin32_testall",
+        "peekOfCode": "def run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()\n    result = subprocess.run(cmd, check=False, cwd=dirname)\n    print(f\"*** Test script '{script}' exited with {result.returncode}\")\n    sys.stdout.flush()\n    if result.returncode:",
+        "detail": "Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "find_and_run",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_testall",
+        "description": "Scripts.pywin32_testall",
+        "peekOfCode": "def find_and_run(possible_locations, extras):\n    for maybe in possible_locations:\n        if os.path.isfile(maybe):\n            run_test(maybe, extras)\n            break\n    else:\n        raise RuntimeError(\n            \"Failed to locate a test script in one of %s\" % possible_locations\n        )\ndef main():",
+        "detail": "Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Scripts.pywin32_testall",
+        "description": "Scripts.pywin32_testall",
+        "peekOfCode": "def main():\n    import argparse\n    code_directories = [project_root] + site_packages\n    parser = argparse.ArgumentParser(\n        description=\"A script to trigger tests in all subprojects of PyWin32.\"\n    )\n    parser.add_argument(\n        \"-no-user-interaction\",\n        default=False,\n        action=\"store_true\",",
+        "detail": "Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_testall",
+        "description": "Scripts.pywin32_testall",
+        "peekOfCode": "project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))\nsite_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras",
+        "detail": "Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "site_packages",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_testall",
+        "description": "Scripts.pywin32_testall",
+        "peekOfCode": "site_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)",
+        "detail": "Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "failures",
+        "kind": 5,
+        "importPath": "Scripts.pywin32_testall",
+        "description": "Scripts.pywin32_testall",
+        "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
+        "detail": "Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "kind": 2,
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "peekOfCode": "def setup_logger(config_path=\"logging.yaml\", logger_name=\"root\") -> logging.Logger:\n    with open(config_path, 'r') as f:\n        config = yaml.safe_load(f.read())\n        logging.config.dictConfig(config)\n    return logging.getLogger(logger_name)",
+        "detail": "utils.logger_util",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "kind": 2,
+        "importPath": "utils.logging_util",
+        "description": "utils.logging_util",
+        "peekOfCode": "def get_logger(name: str, log_to_file: bool = False, log_dir: str = \"logs\") -> logging.Logger:\n    logger = logging.getLogger(name)\n    if not logger.handlers:\n        logger.setLevel(logging.DEBUG)\n        # Create formatter\n        formatter = logging.Formatter(\n            fmt=\"%(asctime)s %(filename)s#%(funcName)s - [%(levelname)s] = %(message)s\",\n            datefmt=\"%Y-%m-%d %H:%M:%S\"\n        )\n        # Console handler",
+        "detail": "utils.logging_util",
+        "documentation": {}
+    },
+    {
+        "label": "ModelName",
+        "kind": 6,
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "peekOfCode": "class ModelName(Enum):\n    DECISION_TREE = \"Decision Tree\"\n    NAIVE_BAYES = \"Naive Bayes\"\n    SUPPORT_VECTOR_MACHINE = \"Support Vector Machine\"\n    LOGISTIC_REGRESSION = \"Logistic Regression\"\n    RANDOM_FOREST = \"Random Forest\"\n    XG_BOOST = \"XG Boost\"\nclass WeatherModelManager:\n    \"\"\"\n    Handles training, saving, loading, and prediction for crop recommendation models.",
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherModelManager",
+        "kind": 6,
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "peekOfCode": "class WeatherModelManager:\n    \"\"\"\n    Handles training, saving, loading, and prediction for crop recommendation models.\n    \"\"\"\n    def __init__(self, data_path: str = CROP_DATA_PATH, models_dir: str = MODELS_DIR):\n        self.data_path = data_path\n        self.models_dir = models_dir\n        os.makedirs(self.models_dir, exist_ok=True)\n        self.models = {}\n        self.accuracies = {}",
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_weather",
+        "kind": 2,
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "peekOfCode": "def fetch_weather(lat: float, long: float, *args: str) -> Dict[str, List[Any]]:\n    \"\"\"\n    Fetch and return hourly weather data (e.g., temperature, humidity) from Open-Meteo API.\n    :param lat: Latitude of the location\n    :param long: Longitude of the location\n    :param args: Weather variable names to fetch (e.g., 'temperature_2m', 'relative_humidity_2m')\n    :return: Dictionary with time and requested weather variables\n    \"\"\"\n    base_url = \"https://api.open-meteo.com/v1/forecast\"\n    weather_vars = \",\".join(args)",
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "peekOfCode": "logger = setup_logger(logger_name=__name__)\nMODELS_DIR = os.path.join(os.path.dirname(__file__), \"models\")\nCROP_DATA_PATH = os.path.join(os.path.dirname(__file__), \"..\", \"crop_recommendation.csv\")\nclass ModelName(Enum):\n    DECISION_TREE = \"Decision Tree\"\n    NAIVE_BAYES = \"Naive Bayes\"\n    SUPPORT_VECTOR_MACHINE = \"Support Vector Machine\"\n    LOGISTIC_REGRESSION = \"Logistic Regression\"\n    RANDOM_FOREST = \"Random Forest\"\n    XG_BOOST = \"XG Boost\"",
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "MODELS_DIR",
+        "kind": 5,
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "peekOfCode": "MODELS_DIR = os.path.join(os.path.dirname(__file__), \"models\")\nCROP_DATA_PATH = os.path.join(os.path.dirname(__file__), \"..\", \"crop_recommendation.csv\")\nclass ModelName(Enum):\n    DECISION_TREE = \"Decision Tree\"\n    NAIVE_BAYES = \"Naive Bayes\"\n    SUPPORT_VECTOR_MACHINE = \"Support Vector Machine\"\n    LOGISTIC_REGRESSION = \"Logistic Regression\"\n    RANDOM_FOREST = \"Random Forest\"\n    XG_BOOST = \"XG Boost\"\nclass WeatherModelManager:",
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "CROP_DATA_PATH",
+        "kind": 5,
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "peekOfCode": "CROP_DATA_PATH = os.path.join(os.path.dirname(__file__), \"..\", \"crop_recommendation.csv\")\nclass ModelName(Enum):\n    DECISION_TREE = \"Decision Tree\"\n    NAIVE_BAYES = \"Naive Bayes\"\n    SUPPORT_VECTOR_MACHINE = \"Support Vector Machine\"\n    LOGISTIC_REGRESSION = \"Logistic Regression\"\n    RANDOM_FOREST = \"Random Forest\"\n    XG_BOOST = \"XG Boost\"\nclass WeatherModelManager:\n    \"\"\"",
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "ModelMetrics",
+        "kind": 6,
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "peekOfCode": "class ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    r2_score: float\n    mean_squared_error: float\n    cross_val_scores: np.ndarray\nclass YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.\n    This class provides functionality to train and evaluate a linear regression model\n    for crop yield prediction based on environmental and agricultural parameters.",
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "YieldPredictor",
+        "kind": 6,
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "peekOfCode": "class YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.\n    This class provides functionality to train and evaluate a linear regression model\n    for crop yield prediction based on environmental and agricultural parameters.\n    Attributes:\n        training_data (Optional[pd.DataFrame]): The loaded training dataset\n        features (Optional[pd.DataFrame]): Selected features for prediction\n        target (Optional[pd.Series]): Target variable (Production)\n        model (LinearRegression): The trained linear regression model",
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "peekOfCode": "def main():\n    \"\"\"Main function to demonstrate usage of the YieldPredictor class.\"\"\"\n    try:\n        # Initialize predictor\n        predictor = YieldPredictor()\n        # Load data\n        predictor.load_data('./Burdwan_Crop.csv')\n        # Train model\n        predictor.train_model()\n        # Example prediction",
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "peekOfCode": "logger = setup_logger(__name__)\n@dataclass\nclass ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    r2_score: float\n    mean_squared_error: float\n    cross_val_scores: np.ndarray\nclass YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.",
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "ModelType",
+        "kind": 6,
+        "importPath": "yield_sub_model.yield_sb",
+        "description": "yield_sub_model.yield_sb",
+        "peekOfCode": "class ModelType(Enum):\n    \"\"\"Enumeration of available model types.\"\"\"\n    DECISION_TREE = \"Decision Tree\"\n    NAIVE_BAYES = \"Naive Bayes\"\n    SVM = \"SVM\"\n    LOGISTIC_REGRESSION = \"Logistic Regression\"\n    RANDOM_FOREST = \"Random Forest\"\n@dataclass\nclass ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"",
+        "detail": "yield_sub_model.yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "ModelMetrics",
+        "kind": 6,
+        "importPath": "yield_sub_model.yield_sb",
+        "description": "yield_sub_model.yield_sb",
+        "peekOfCode": "class ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    accuracy: float\n    classification_report: str\n    cross_val_scores: np.ndarray\nclass CropYieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using various machine learning models.\n    This class provides functionality to train and evaluate multiple machine learning\n    models for crop yield prediction based on environmental and agricultural parameters.",
+        "detail": "yield_sub_model.yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "CropYieldPredictor",
+        "kind": 6,
+        "importPath": "yield_sub_model.yield_sb",
+        "description": "yield_sub_model.yield_sb",
+        "peekOfCode": "class CropYieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using various machine learning models.\n    This class provides functionality to train and evaluate multiple machine learning\n    models for crop yield prediction based on environmental and agricultural parameters.\n    \"\"\"\n    def __init__(self, data_path: Union[str, Path]):\n        \"\"\"\n        Initialize the CropYieldPredictor.\n        Args:",
+        "detail": "yield_sub_model.yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "yield_sub_model.yield_sb",
+        "description": "yield_sub_model.yield_sb",
+        "peekOfCode": "def main():\n    \"\"\"Main function to demonstrate usage of the CropYieldPredictor class.\"\"\"\n    try:\n        # Initialize predictor\n        predictor = CropYieldPredictor('./Burdwan_Crop.csv')\n        predictor.load_data()\n        # Train all models\n        for model_type in ModelType:\n            predictor.train_model(model_type)\n        # Example prediction",
+        "detail": "yield_sub_model.yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "yield_sub_model.yield_sb",
+        "description": "yield_sub_model.yield_sb",
+        "peekOfCode": "logger = setup_logger(logger_name=__name__)\nclass ModelType(Enum):\n    \"\"\"Enumeration of available model types.\"\"\"\n    DECISION_TREE = \"Decision Tree\"\n    NAIVE_BAYES = \"Naive Bayes\"\n    SVM = \"SVM\"\n    LOGISTIC_REGRESSION = \"Logistic Regression\"\n    RANDOM_FOREST = \"Random Forest\"\n@dataclass\nclass ModelMetrics:",
+        "detail": "yield_sub_model.yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "include_setuptools",
+        "kind": 2,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "def include_setuptools(args):\n    \"\"\"\n    Install setuptools only if absent, not excluded and when using Python <3.12.\n    \"\"\"\n    cli = not args.no_setuptools\n    env = not os.environ.get(\"PIP_NO_SETUPTOOLS\")\n    absent = not importlib.util.find_spec(\"setuptools\")\n    python_lt_3_12 = this_python < (3, 12)\n    return cli and env and absent and python_lt_3_12\ndef include_wheel(args):",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "include_wheel",
+        "kind": 2,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "def include_wheel(args):\n    \"\"\"\n    Install wheel only if absent, not excluded and when using Python <3.12.\n    \"\"\"\n    cli = not args.no_wheel\n    env = not os.environ.get(\"PIP_NO_WHEEL\")\n    absent = not importlib.util.find_spec(\"wheel\")\n    python_lt_3_12 = this_python < (3, 12)\n    return cli and env and absent and python_lt_3_12\ndef determine_pip_install_arguments():",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "determine_pip_install_arguments",
+        "kind": 2,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "def determine_pip_install_arguments():\n    pre_parser = argparse.ArgumentParser()\n    pre_parser.add_argument(\"--no-setuptools\", action=\"store_true\")\n    pre_parser.add_argument(\"--no-wheel\", action=\"store_true\")\n    pre, args = pre_parser.parse_known_args()\n    args.append(\"pip\")\n    if include_setuptools(pre):\n        args.append(\"setuptools\")\n    if include_wheel(pre):\n        args.append(\"wheel\")",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "monkeypatch_for_cert",
+        "kind": 2,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "def monkeypatch_for_cert(tmpdir):\n    \"\"\"Patches `pip install` to provide default certificate with the lowest priority.\n    This ensures that the bundled certificates are used unless the user specifies a\n    custom cert via any of pip's option passing mechanisms (config, env-var, CLI).\n    A monkeypatch is the easiest way to achieve this, without messing too much with\n    the rest of pip's internals.\n    \"\"\"\n    from pip._internal.commands.install import InstallCommand\n    # We want to be using the internal certificates.\n    cert_path = os.path.join(tmpdir, \"cacert.pem\")",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "bootstrap",
+        "kind": 2,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "def bootstrap(tmpdir):\n    monkeypatch_for_cert(tmpdir)\n    # Execute the included pip and use it to install the latest pip and\n    # any user-requested packages from PyPI.\n    from pip._internal.cli.main import main as pip_entry_point\n    args = determine_pip_install_arguments()\n    sys.exit(pip_entry_point(args))\ndef main():\n    tmpdir = None\n    try:",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "def main():\n    tmpdir = None\n    try:\n        # Create a temporary working directory\n        tmpdir = tempfile.mkdtemp()\n        # Unpack the zipfile into the temporary directory\n        pip_zip = os.path.join(tmpdir, \"pip.zip\")\n        with open(pip_zip, \"wb\") as fp:\n            fp.write(b85decode(DATA.replace(b\"\\n\", b\"\")))\n        # Add the zipfile to sys.path so that we can import it",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "this_python",
+        "kind": 5,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "this_python = sys.version_info[:2]\nmin_version = (3, 9)\nif this_python < min_version:\n    message_parts = [\n        \"This script does not work on Python {}.{}.\".format(*this_python),\n        \"The minimum supported Python version is {}.{}.\".format(*min_version),\n        \"Please use https://bootstrap.pypa.io/pip/{}.{}/get-pip.py instead.\".format(*this_python),\n    ]\n    print(\"ERROR: \" + \" \".join(message_parts))\n    sys.exit(1)",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "min_version",
+        "kind": 5,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "min_version = (3, 9)\nif this_python < min_version:\n    message_parts = [\n        \"This script does not work on Python {}.{}.\".format(*this_python),\n        \"The minimum supported Python version is {}.{}.\".format(*min_version),\n        \"Please use https://bootstrap.pypa.io/pip/{}.{}/get-pip.py instead.\".format(*this_python),\n    ]\n    print(\"ERROR: \" + \" \".join(message_parts))\n    sys.exit(1)\nimport os.path",
+        "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "DATA",
+        "kind": 5,
+        "importPath": "get-pip",
+        "description": "get-pip",
+        "peekOfCode": "DATA = b\"\"\"\nP)h>@6aWAK2ms(onp(ba`VjU2003hF000jF003}la4%n9X>MtBUtcb8c|B0UO2j}6z0X&KUUXrdK~dC\n#f)_y$_26w;%50mqfp%s{QkVX{vt7C&5b}6=dAye62s$SU9nhE}D}0jZ7QT~G41O@Cs{W8AFI5FEP~1\nJ(+rk*rU<;$CaP7I1^1|Pp&Ud1`-)Ht$47h=tSD>J!fm}sV{PrY}+lLd3oUh>R=L2FGW*E^2g*Gxwf^\ne82QMwX{#{hK<5(fmSnUab%i{N{v`lg}tduUKS4YCD6gkCjC>0C$JPX}Aa(WN<gmo*)UOepU0{`twS&\nX(DpBFPL}t?ulkS<+%qo>R=ItXWk@_9-EstuX4u;Q}tnY|KAUO9KQH000080N_cQT5tES*SrA$09FG4\n01p5F0B~t=FJE76VQFq(UoLQYT~bSL+b|5i`&SU@!Oq~iIS)&L9d|8u8wNv=>6nNu38Ea&`}HFgyJ@G\nB9{e8sD4K$g2|O2c-|@;t@dR%;`5Qu6f^i+#IYx8|79X$VF3?d#n|xfMkA8wQAoLVDffU76;J#O)CYU\ntTKs|(rtOUt}xq0efX64y=-}wYe4gv+Rewsv@!47DzwFn{pMIm#X%sAFClIW>99{f@Za2e3a^UYte1H\n%y3G<XNkQ|9}&5xy4m@b>HUTlK2Lp_T}m3nsgC)$#bX09kug6MU#nM~&r24-0~c2yu2!TgU+z6-O~;x",
+        "detail": "get-pip",
+        "documentation": {}
+    }
+]

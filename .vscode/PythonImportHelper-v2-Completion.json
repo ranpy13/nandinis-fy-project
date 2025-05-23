@@ -279,6 +279,62 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Image",
         "importPath": "PIL",
         "description": "PIL",
@@ -292,6 +348,22 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "isExtraImport": true,
+        "detail": "utils.logger_util",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "utils.logger_util",
+        "description": "utils.logger_util",
+        "isExtraImport": true,
+        "detail": "utils.logger_util",
         "documentation": {}
     },
     {
@@ -480,6 +552,30 @@
         "documentation": {}
     },
     {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -501,6 +597,30 @@
         "description": "enum",
         "isExtraImport": true,
         "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -529,6 +649,14 @@
     },
     {
         "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
         "importPath": "sklearn.preprocessing",
         "description": "sklearn.preprocessing",
         "isExtraImport": true,
@@ -823,6 +951,134 @@
         "documentation": {}
     },
     {
+        "label": "FertilizerPredictor",
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "isExtraImport": true,
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "FertilizerType",
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "isExtraImport": true,
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "InputParameters",
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "isExtraImport": true,
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "FertilizerPredictor",
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "isExtraImport": true,
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "FertilizerType",
+        "importPath": "fertilizer_sub_model.fertilizer_sb",
+        "description": "fertilizer_sub_model.fertilizer_sb",
+        "isExtraImport": true,
+        "detail": "fertilizer_sub_model.fertilizer_sb",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherModelManager",
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "isExtraImport": true,
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "ModelName",
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "isExtraImport": true,
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherModelManager",
+        "importPath": "weather_sub_model.weather_sb",
+        "description": "weather_sub_model.weather_sb",
+        "isExtraImport": true,
+        "detail": "weather_sub_model.weather_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseClassifier",
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "isExtraImport": true,
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseClassifierConfig",
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "isExtraImport": true,
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseAnalyzer",
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "isExtraImport": true,
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "DiseaseClassifier",
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "isExtraImport": true,
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
+        "label": "YieldPredictor",
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "isExtraImport": true,
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "YieldPredictor",
+        "importPath": "yield_sub_model.crop_yield_sb",
+        "description": "yield_sub_model.crop_yield_sb",
+        "isExtraImport": true,
+        "detail": "yield_sub_model.crop_yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "CropYieldPredictor",
+        "importPath": "yield_sub_model.yield_sb",
+        "description": "yield_sub_model.yield_sb",
+        "isExtraImport": true,
+        "detail": "yield_sub_model.yield_sb",
+        "documentation": {}
+    },
+    {
+        "label": "ModelType",
+        "importPath": "yield_sub_model.yield_sb",
+        "description": "yield_sub_model.yield_sb",
+        "isExtraImport": true,
+        "detail": "yield_sub_model.yield_sb",
+        "documentation": {}
+    },
+    {
         "label": "os.path",
         "kind": 6,
         "isExtraImport": true,
@@ -855,6 +1111,14 @@
         "description": "base64",
         "isExtraImport": true,
         "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "EnsembleModel",
+        "importPath": "ensemble_model",
+        "description": "ensemble_model",
+        "isExtraImport": true,
+        "detail": "ensemble_model",
         "documentation": {}
     },
     {
@@ -1416,6 +1680,51 @@
         "documentation": {}
     },
     {
+        "label": "EnsembleInput",
+        "kind": 6,
+        "importPath": "ensemble_model",
+        "description": "ensemble_model",
+        "peekOfCode": "class EnsembleInput:\n    \"\"\"Data class to store input parameters for ensemble prediction.\"\"\"\n    area: float  # Area of land in hectares\n    crop_name: str  # Name of the crop\n    location: Tuple[float, float]  # (latitude, longitude)\n    soil_type: int  # Soil type index\n    nitrogen: float  # Nitrogen content in soil\n    potassium: float  # Potassium content in soil\n    phosphorous: float  # Phosphorous content in soil\n@dataclass",
+        "detail": "ensemble_model",
+        "documentation": {}
+    },
+    {
+        "label": "EnsembleOutput",
+        "kind": 6,
+        "importPath": "ensemble_model",
+        "description": "ensemble_model",
+        "peekOfCode": "class EnsembleOutput:\n    \"\"\"Data class to store ensemble prediction results.\"\"\"\n    predicted_yield: float  # Predicted yield in tons\n    confidence_score: float  # Confidence score of prediction (0-1)\n    recommended_fertilizer: str  # Recommended fertilizer type\n    disease_risk: float  # Disease risk percentage\n    weather_suitability: float  # Weather suitability score\nclass EnsembleModel:\n    \"\"\"\n    A class that combines multiple sub-models to provide comprehensive crop yield predictions.",
+        "detail": "ensemble_model",
+        "documentation": {}
+    },
+    {
+        "label": "EnsembleModel",
+        "kind": 6,
+        "importPath": "ensemble_model",
+        "description": "ensemble_model",
+        "peekOfCode": "class EnsembleModel:\n    \"\"\"\n    A class that combines multiple sub-models to provide comprehensive crop yield predictions.\n    This ensemble model integrates predictions from:\n    - Fertilizer recommendation model\n    - Weather prediction model\n    - Disease detection model\n    - Crop yield prediction model\n    Attributes:\n        fertilizer_model (FertilizerPredictor): Model for fertilizer recommendations",
+        "detail": "ensemble_model",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "ensemble_model",
+        "description": "ensemble_model",
+        "peekOfCode": "def main():\n    \"\"\"Main function to demonstrate usage of the EnsembleModel class.\"\"\"\n    try:\n        # Define model paths\n        model_paths = {\n            'fertilizer_data': 'FertilizerPrediction.csv',\n            'weather_data': 'crop_recommendation.csv',\n            'disease_model': 'plant_disease_model.pt',\n            'yield_data': 'Burdwan_Crop.csv'\n        }",
+        "detail": "ensemble_model",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "ensemble_model",
+        "description": "ensemble_model",
+        "peekOfCode": "logger = setup_logger(__name__)\n@dataclass\nclass EnsembleInput:\n    \"\"\"Data class to store input parameters for ensemble prediction.\"\"\"\n    area: float  # Area of land in hectares\n    crop_name: str  # Name of the crop\n    location: Tuple[float, float]  # (latitude, longitude)\n    soil_type: int  # Soil type index\n    nitrogen: float  # Nitrogen content in soil\n    potassium: float  # Potassium content in soil",
+        "detail": "ensemble_model",
+        "documentation": {}
+    },
+    {
         "label": "include_setuptools",
         "kind": 2,
         "importPath": "get-pip",
@@ -1494,6 +1803,69 @@
         "description": "get-pip",
         "peekOfCode": "DATA = b\"\"\"\nP)h>@6aWAK2ms(onp(ba`VjU2003hF000jF003}la4%n9X>MtBUtcb8c|B0UO2j}6z0X&KUUXrdK~dC\n#f)_y$_26w;%50mqfp%s{QkVX{vt7C&5b}6=dAye62s$SU9nhE}D}0jZ7QT~G41O@Cs{W8AFI5FEP~1\nJ(+rk*rU<;$CaP7I1^1|Pp&Ud1`-)Ht$47h=tSD>J!fm}sV{PrY}+lLd3oUh>R=L2FGW*E^2g*Gxwf^\ne82QMwX{#{hK<5(fmSnUab%i{N{v`lg}tduUKS4YCD6gkCjC>0C$JPX}Aa(WN<gmo*)UOepU0{`twS&\nX(DpBFPL}t?ulkS<+%qo>R=ItXWk@_9-EstuX4u;Q}tnY|KAUO9KQH000080N_cQT5tES*SrA$09FG4\n01p5F0B~t=FJE76VQFq(UoLQYT~bSL+b|5i`&SU@!Oq~iIS)&L9d|8u8wNv=>6nNu38Ea&`}HFgyJ@G\nB9{e8sD4K$g2|O2c-|@;t@dR%;`5Qu6f^i+#IYx8|79X$VF3?d#n|xfMkA8wQAoLVDffU76;J#O)CYU\ntTKs|(rtOUt}xq0efX64y=-}wYe4gv+Rewsv@!47DzwFn{pMIm#X%sAFClIW>99{f@Za2e3a^UYte1H\n%y3G<XNkQ|9}&5xy4m@b>HUTlK2Lp_T}m3nsgC)$#bX09kug6MU#nM~&r24-0~c2yu2!TgU+z6-O~;x",
         "detail": "get-pip",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherType",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class WeatherType(Enum):\n    SUNNY = \"sunny\"\n    RAINY = \"rainy\"\n    CLOUDY = \"cloudy\"\n    FOGGY = \"foggy\"\n@dataclass\nclass FertilizerInput:\n    name: FertilizerType\n    quantity: float\n@dataclass",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "FertilizerInput",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class FertilizerInput:\n    name: FertilizerType\n    quantity: float\n@dataclass\nclass InputParameters:\n    location: Tuple[float]\n    crop_name: str\n    images: List[str]\n    weather_type: WeatherType\n    fertilizer: FertilizerInput",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "InputParameters",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class InputParameters:\n    location: Tuple[float]\n    crop_name: str\n    images: List[str]\n    weather_type: WeatherType\n    fertilizer: FertilizerInput\n@dataclass\nclass FrozenModel:\n    disease_model: DiseaseClassifier\n    ensembled_model: EnsembleModel",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "FrozenModel",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class FrozenModel:\n    disease_model: DiseaseClassifier\n    ensembled_model: EnsembleModel\nclass EnsembledPredictor:\n    def __init__(self) -> None:\n        self.disease_analyser = DiseaseAnalyzer()\n        self.fertilizer_processor = FertilizerPredictor()\n        self.yield_predictor = YieldPredictor()\n        self.weather_processor = WeatherModelManager()\n        self.frozen_models = FrozenModel",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "EnsembledPredictor",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class EnsembledPredictor:\n    def __init__(self) -> None:\n        self.disease_analyser = DiseaseAnalyzer()\n        self.fertilizer_processor = FertilizerPredictor()\n        self.yield_predictor = YieldPredictor()\n        self.weather_processor = WeatherModelManager()\n        self.frozen_models = FrozenModel\n        initialize_frozen_models(self.frozen_models)\n        pass\n    def get_yield_production_estimate(self, input_parameters: InputParameters) -> float:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "initialize_frozen_models",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def initialize_frozen_models(frozen_models: FrozenModel) -> None:\n    frozen_models.disease_model.load_model(1)\n    frozen_models.disease_model.evaluate()\n    with open(\"models/ensembled_model_frozen.pkl\", \"rb\") as ensembled_weights:\n        frozen_models.ensembled_model = pickle.load(ensembled_weights)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "logger = setup_logger(__name__)\nclass WeatherType(Enum):\n    SUNNY = \"sunny\"\n    RAINY = \"rainy\"\n    CLOUDY = \"cloudy\"\n    FOGGY = \"foggy\"\n@dataclass\nclass FertilizerInput:\n    name: FertilizerType\n    quantity: float",
+        "detail": "main",
         "documentation": {}
     }
 ]

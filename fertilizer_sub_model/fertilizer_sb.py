@@ -20,7 +20,7 @@ from sklearn.metrics import classification_report, accuracy_score
 
 from utils.logger_util import setup_logger
 
-logger = setup_logger(__name__)
+logger = setup_logger(logger_name= __name__)
 
 class FertilizerType(Enum):
     """Enumeration of available fertilizer types."""

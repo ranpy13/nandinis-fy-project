@@ -1047,6 +1047,14 @@
         "documentation": {}
     },
     {
+        "label": "DiseaseClassifierConfig",
+        "importPath": "disease_sub_model.disease_sb",
+        "description": "disease_sub_model.disease_sb",
+        "isExtraImport": true,
+        "detail": "disease_sub_model.disease_sb",
+        "documentation": {}
+    },
+    {
         "label": "YieldPredictor",
         "importPath": "yield_sub_model.crop_yield_sb",
         "description": "yield_sub_model.crop_yield_sb",
@@ -1114,11 +1122,52 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "EnsembleModel",
         "importPath": "ensemble_model",
         "description": "ensemble_model",
         "isExtraImport": true,
         "detail": "ensemble_model",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "main",
+        "description": "main",
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -1171,7 +1220,7 @@
         "kind": 6,
         "importPath": "disease_sub_model.disease_sb",
         "description": "disease_sub_model.disease_sb",
-        "peekOfCode": "class DiseaseAnalyzer:\n    def __init__(self):\n        classifier = DiseaseClassifier(config)\n        model_name: str = classifier.config.model_save_path\n        if not os.path.exists(model_name):\n            raise FileNotFoundError(f\"The model {model_name} isn't loaded or trained yet.\")\n    def process(self, images: list[str]) -> float:\n        \"\"\"\n        Takes the list of images as input and returns an estimate percentage of the spread of disease throughout.\n        Parameters:",
+        "peekOfCode": "class DiseaseAnalyzer:\n    def __init__(self, config: DiseaseClassifierConfig):\n        classifier = DiseaseClassifier(config)\n        model_name: str = classifier.config.model_save_path\n        if not os.path.exists(model_name):\n            raise FileNotFoundError(f\"The model {model_name} isn't loaded or trained yet.\")\n    def process(self, images: list[str]) -> float:\n        \"\"\"\n        Takes the list of images as input and returns an estimate percentage of the spread of disease throughout.\n        Parameters:",
         "detail": "disease_sub_model.disease_sb",
         "documentation": {}
     },
@@ -1243,7 +1292,7 @@
         "kind": 5,
         "importPath": "fertilizer_sub_model.fertilizer_sb",
         "description": "fertilizer_sub_model.fertilizer_sb",
-        "peekOfCode": "logger = setup_logger(__name__)\nclass FertilizerType(Enum):\n    \"\"\"Enumeration of available fertilizer types.\"\"\"\n    NPK_10_26_26 = \"10-26-26\"\n    NPK_14_35_14 = \"14-35-14\"\n    NPK_17_17_17 = \"17-17-17\"\n    NPK_20_20 = \"20-20\"\n    NPK_28_28 = \"28-28\"\n    DAP = \"DAP\"\n    UREA = \"Urea\"",
+        "peekOfCode": "logger = setup_logger(logger_name= __name__)\nclass FertilizerType(Enum):\n    \"\"\"Enumeration of available fertilizer types.\"\"\"\n    NPK_10_26_26 = \"10-26-26\"\n    NPK_14_35_14 = \"14-35-14\"\n    NPK_17_17_17 = \"17-17-17\"\n    NPK_20_20 = \"20-20\"\n    NPK_28_28 = \"28-28\"\n    DAP = \"DAP\"\n    UREA = \"Urea\"",
         "detail": "fertilizer_sub_model.fertilizer_sb",
         "documentation": {}
     },
@@ -1531,7 +1580,7 @@
         "kind": 2,
         "importPath": "utils.logger_util",
         "description": "utils.logger_util",
-        "peekOfCode": "def setup_logger(config_path=\"logging.yaml\", logger_name=\"root\") -> logging.Logger:\n    with open(config_path, 'r') as f:\n        config = yaml.safe_load(f.read())\n        logging.config.dictConfig(config)\n    return logging.getLogger(logger_name)",
+        "peekOfCode": "def setup_logger(config_path=\"./utils/logging.yaml\", logger_name=\"root\") -> logging.Logger:\n    with open(config_path, 'r') as f:\n        config = yaml.safe_load(f.read())\n        logging.config.dictConfig(config)\n    return logging.getLogger(logger_name)",
         "detail": "utils.logger_util",
         "documentation": {}
     },
@@ -1630,7 +1679,7 @@
         "kind": 5,
         "importPath": "yield_sub_model.crop_yield_sb",
         "description": "yield_sub_model.crop_yield_sb",
-        "peekOfCode": "logger = setup_logger(__name__)\n@dataclass\nclass ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    r2_score: float\n    mean_squared_error: float\n    cross_val_scores: np.ndarray\nclass YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.",
+        "peekOfCode": "logger = setup_logger(logger_name=__name__)\n@dataclass\nclass ModelMetrics:\n    \"\"\"Data class to store model performance metrics.\"\"\"\n    r2_score: float\n    mean_squared_error: float\n    cross_val_scores: np.ndarray\nclass YieldPredictor:\n    \"\"\"\n    A class to handle crop yield prediction using linear regression.",
         "detail": "yield_sub_model.crop_yield_sb",
         "documentation": {}
     },
@@ -1720,7 +1769,7 @@
         "kind": 5,
         "importPath": "ensemble_model",
         "description": "ensemble_model",
-        "peekOfCode": "logger = setup_logger(__name__)\n@dataclass\nclass EnsembleInput:\n    \"\"\"Data class to store input parameters for ensemble prediction.\"\"\"\n    area: float  # Area of land in hectares\n    crop_name: str  # Name of the crop\n    location: Tuple[float, float]  # (latitude, longitude)\n    soil_type: int  # Soil type index\n    nitrogen: float  # Nitrogen content in soil\n    potassium: float  # Potassium content in soil",
+        "peekOfCode": "logger = setup_logger(logger_name= __name__)\n@dataclass\nclass EnsembleInput:\n    \"\"\"Data class to store input parameters for ensemble prediction.\"\"\"\n    area: float  # Area of land in hectares\n    crop_name: str  # Name of the crop\n    location: Tuple[float, float]  # (latitude, longitude)\n    soil_type: int  # Soil type index\n    nitrogen: float  # Nitrogen content in soil\n    potassium: float  # Potassium content in soil",
         "detail": "ensemble_model",
         "documentation": {}
     },
@@ -1810,7 +1859,16 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class WeatherType(Enum):\n    SUNNY = \"sunny\"\n    RAINY = \"rainy\"\n    CLOUDY = \"cloudy\"\n    FOGGY = \"foggy\"\n@dataclass\nclass FertilizerInput:\n    name: FertilizerType\n    quantity: float\n@dataclass",
+        "peekOfCode": "class WeatherType(Enum):\n    SUNNY = \"sunny\"\n    RAINY = \"rainy\"\n    CLOUDY = \"cloudy\"\n    FOGGY = \"foggy\"\nclass CropData(BaseModel):\n    State_Name: str\n    District_Name: str\n    Crop_Year: int\n    Season: str",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "CropData",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class CropData(BaseModel):\n    State_Name: str\n    District_Name: str\n    Crop_Year: int\n    Season: str\n    Crop: str\n    Area: float\n@dataclass\nclass FertilizerInput:\n    name: FertilizerType",
         "detail": "main",
         "documentation": {}
     },
@@ -1837,7 +1895,7 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class FrozenModel:\n    disease_model: DiseaseClassifier\n    ensembled_model: EnsembleModel\nclass EnsembledPredictor:\n    def __init__(self) -> None:\n        self.disease_analyser = DiseaseAnalyzer()\n        self.fertilizer_processor = FertilizerPredictor()\n        self.yield_predictor = YieldPredictor()\n        self.weather_processor = WeatherModelManager()\n        self.frozen_models = FrozenModel",
+        "peekOfCode": "class FrozenModel:\n    disease_model: DiseaseClassifier\n    ensembled_model: EnsembleModel\nclass EnsembledPredictor:\n    def __init__(self) -> None:\n        self.disease_analyser = DiseaseAnalyzer(\n            DiseaseClassifierConfig(\n                image_size=224,\n                batch_size=64,\n                epochs=5,",
         "detail": "main",
         "documentation": {}
     },
@@ -1846,7 +1904,7 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class EnsembledPredictor:\n    def __init__(self) -> None:\n        self.disease_analyser = DiseaseAnalyzer()\n        self.fertilizer_processor = FertilizerPredictor()\n        self.yield_predictor = YieldPredictor()\n        self.weather_processor = WeatherModelManager()\n        self.frozen_models = FrozenModel\n        initialize_frozen_models(self.frozen_models)\n        pass\n    def get_yield_production_estimate(self, input_parameters: InputParameters) -> float:",
+        "peekOfCode": "class EnsembledPredictor:\n    def __init__(self) -> None:\n        self.disease_analyser = DiseaseAnalyzer(\n            DiseaseClassifierConfig(\n                image_size=224,\n                batch_size=64,\n                epochs=5,\n                model_save_path=r\"./models/disease_prediction_model_frozen.pt\"\n        ))\n        self.fertilizer_processor = FertilizerPredictor(\"sample_data.csv\")",
         "detail": "main",
         "documentation": {}
     },
@@ -1855,7 +1913,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def initialize_frozen_models(frozen_models: FrozenModel) -> None:\n    frozen_models.disease_model.load_model(1)\n    frozen_models.disease_model.evaluate()\n    with open(\"models/ensembled_model_frozen.pkl\", \"rb\") as ensembled_weights:\n        frozen_models.ensembled_model = pickle.load(ensembled_weights)",
+        "peekOfCode": "def initialize_frozen_models(frozen_models: FrozenModel) -> None:\n    global model, label_encoders\n    frozen_models.disease_model.load_model(39)\n    # frozen_models.disease_model.evaluate()\n    with open(\"models/ensembled_model_frozen.pkl\", \"rb\") as ensembled_weights:\n        frozen_models.ensembled_model = pickle.load(ensembled_weights)\n    # Load model and encoders\n    with open(\"models/crop_production_model.pkl\", \"rb\") as f:\n        model = pickle.load(f)\n    with open(\"models/label_encoders.pkl\", \"rb\") as f:",
         "detail": "main",
         "documentation": {}
     },
@@ -1864,8 +1922,44 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "logger = setup_logger(__name__)\nclass WeatherType(Enum):\n    SUNNY = \"sunny\"\n    RAINY = \"rainy\"\n    CLOUDY = \"cloudy\"\n    FOGGY = \"foggy\"\n@dataclass\nclass FertilizerInput:\n    name: FertilizerType\n    quantity: float",
+        "peekOfCode": "logger = setup_logger(logger_name= __name__)\nclass WeatherType(Enum):\n    SUNNY = \"sunny\"\n    RAINY = \"rainy\"\n    CLOUDY = \"cloudy\"\n    FOGGY = \"foggy\"\nclass CropData(BaseModel):\n    State_Name: str\n    District_Name: str\n    Crop_Year: int",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "InputParameters",
+        "kind": 6,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "class InputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\n@app.post(\"/predict\", response_model=OutputParameters)\nasync def predict(input_parameters: InputParameters):",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "OutputParameters",
+        "kind": 6,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "class OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\n@app.post(\"/predict\", response_model=OutputParameters)\nasync def predict(input_parameters: InputParameters):\n    # yield_production_estimate = predictor.predict_yield(input_parameters)\n    disease_prediction = predictor.EnsembledPredictor.predict_disease(input_parameters.images)\n    return OutputParameters(disease_prediction=disease_prediction)\n@app.post(\"/predict_production\", response_model=OutputParameters)\nasync def predict_production(input_parameters: InputParameters):",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "app = FastAPI()\npredictor = main.EnsembledPredictor()\nclass InputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "predictor",
+        "kind": 5,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "predictor = main.EnsembledPredictor()\nclass InputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\n@app.post(\"/predict\", response_model=OutputParameters)",
+        "detail": "server",
         "documentation": {}
     }
 ]

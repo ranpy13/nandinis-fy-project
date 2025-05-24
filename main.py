@@ -2,23 +2,31 @@ from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
 import pickle
-import torch
-import torch.nn as nn
+from pydantic import BaseModel
+import pandas as pd
 from typing import List, Tuple
 from utils.logger_util import setup_logger
 from fertilizer_sub_model.fertilizer_sb import FertilizerPredictor, FertilizerType
-from disease_sub_model.disease_sb import DiseaseAnalyzer, DiseaseClassifier
+from disease_sub_model.disease_sb import DiseaseAnalyzer, DiseaseClassifier, DiseaseClassifierConfig
 from yield_sub_model.crop_yield_sb import YieldPredictor
 from weather_sub_model.weather_sb import WeatherModelManager
 from ensemble_model import EnsembleModel
 
-logger = setup_logger(__name__)
+logger = setup_logger(logger_name= __name__)
 
 class WeatherType(Enum):
     SUNNY = "sunny"
     RAINY = "rainy"
     CLOUDY = "cloudy"
     FOGGY = "foggy"
+
+class CropData(BaseModel):
+    State_Name: str
+    District_Name: str
+    Crop_Year: int
+    Season: str
+    Crop: str
+    Area: float
 
 @dataclass
 class FertilizerInput:
@@ -40,11 +48,27 @@ class FrozenModel:
 
 class EnsembledPredictor:
     def __init__(self) -> None:
-        self.disease_analyser = DiseaseAnalyzer()
-        self.fertilizer_processor = FertilizerPredictor()
+        self.disease_analyser = DiseaseAnalyzer(
+            DiseaseClassifierConfig(
+                image_size=224,
+                batch_size=64,
+                epochs=5,
+                model_save_path=r"./models/disease_prediction_model_frozen.pt"
+        ))
+        self.fertilizer_processor = FertilizerPredictor("sample_data.csv")
         self.yield_predictor = YieldPredictor()
         self.weather_processor = WeatherModelManager()
-        self.frozen_models = FrozenModel
+        self.frozen_models = FrozenModel(
+            disease_model= DiseaseClassifier(DiseaseClassifierConfig(
+                model_save_path=r"./models/disease_prediction_model_frozen.pt"
+            )),
+            ensembled_model= EnsembleModel({
+                "fertilizer_data": "sample_data.csv",
+                "weather_data": "sample_data.csv",
+                "disease_model": "./models/disease_prediction_model_frozen.pt",
+                "yield_data": "sample_data.csv"
+            })
+        )
         initialize_frozen_models(self.frozen_models)
         pass
 
@@ -62,10 +86,34 @@ class EnsembledPredictor:
     def predict_yield(self, input_parameters: InputParameters) -> float:
         return self.frozen_models.ensembled_model.predict(input_parameters)
     
+    def predict_production(data: CropData):
+        input_dict = data.dict()
+        
+        # Encode categorical inputs
+        for col in ["State_Name", "District_Name", "Season", "Crop"]:
+            encoder = label_encoders[col]
+            input_dict[col] = encoder.transform([input_dict[col]])[0]
+
+        # Convert to DataFrame
+        input_df = pd.DataFrame([input_dict])
+
+        # Predict
+        prediction = model.predict(input_df)[0]
+        # return {"predicted_production": round(prediction, 2)}
+        return prediction
+    
 
 def initialize_frozen_models(frozen_models: FrozenModel) -> None:
-    frozen_models.disease_model.load_model(1)
-    frozen_models.disease_model.evaluate()
+    global model, label_encoders
+    frozen_models.disease_model.load_model(39)
+    # frozen_models.disease_model.evaluate()
     
     with open("models/ensembled_model_frozen.pkl", "rb") as ensembled_weights:
         frozen_models.ensembled_model = pickle.load(ensembled_weights)
+    
+    # Load model and encoders
+    with open("models/crop_production_model.pkl", "rb") as f:
+        model = pickle.load(f)
+
+    with open("models/label_encoders.pkl", "rb") as f:
+        label_encoders = pickle.load(f)

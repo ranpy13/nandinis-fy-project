@@ -40,7 +40,7 @@ class WeatherModelManager:
         os.makedirs(self.models_dir, exist_ok=True)
         self.models = {}
         self.accuracies = {}
-        self._load_data()
+        # self._load_data()
 
     def _load_data(self):
         self.df = pd.read_csv(self.data_path)

@@ -4,6 +4,7 @@ from pathlib import Path
 import pickle
 from pydantic import BaseModel
 import pandas as pd
+import torchvision
 from typing import List, Tuple
 from utils.logger_util import setup_logger
 from fertilizer_sub_model.fertilizer_sb import FertilizerPredictor, FertilizerType
@@ -86,16 +87,23 @@ class EnsembledPredictor:
     def predict_yield(self, input_parameters: InputParameters) -> float:
         return self.frozen_models.ensembled_model.predict(input_parameters)
     
-    def predict_production(data: CropData):
+    def predict_production(self, data: CropData):
+        print(f"{label_encoders}")
+        print(f"input data: {data}")
         input_dict = data.dict()
+        print(input_dict)
         
         # Encode categorical inputs
         for col in ["State_Name", "District_Name", "Season", "Crop"]:
             encoder = label_encoders[col]
+            print("got the encoders....\n\n")
+            print(f"{encoder}")
             input_dict[col] = encoder.transform([input_dict[col]])[0]
 
+        print("reaching here...")
         # Convert to DataFrame
         input_df = pd.DataFrame([input_dict])
+        print(input_df.head())
 
         # Predict
         prediction = model.predict(input_df)[0]
@@ -108,8 +116,8 @@ def initialize_frozen_models(frozen_models: FrozenModel) -> None:
     frozen_models.disease_model.load_model(39)
     # frozen_models.disease_model.evaluate()
     
-    with open("models/ensembled_model_frozen.pkl", "rb") as ensembled_weights:
-        frozen_models.ensembled_model = pickle.load(ensembled_weights)
+    # with open("models/ensembled_model_frozen.pkl", "rb") as ensembled_weights:
+    #     frozen_models.ensembled_model = pickle.load(ensembled_weights)
     
     # Load model and encoders
     with open("models/crop_production_model.pkl", "rb") as f:

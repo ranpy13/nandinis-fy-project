@@ -63,6 +63,15 @@
         "documentation": {}
     },
     {
+        "label": "torchvision",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
         "label": "datasets",
         "importPath": "torchvision",
         "description": "torchvision",
@@ -948,6 +957,15 @@
         "description": "__future__",
         "isExtraImport": true,
         "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "debugpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "debugpy",
+        "description": "debugpy",
+        "detail": "debugpy",
         "documentation": {}
     },
     {
@@ -1913,7 +1931,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def initialize_frozen_models(frozen_models: FrozenModel) -> None:\n    global model, label_encoders\n    frozen_models.disease_model.load_model(39)\n    # frozen_models.disease_model.evaluate()\n    with open(\"models/ensembled_model_frozen.pkl\", \"rb\") as ensembled_weights:\n        frozen_models.ensembled_model = pickle.load(ensembled_weights)\n    # Load model and encoders\n    with open(\"models/crop_production_model.pkl\", \"rb\") as f:\n        model = pickle.load(f)\n    with open(\"models/label_encoders.pkl\", \"rb\") as f:",
+        "peekOfCode": "def initialize_frozen_models(frozen_models: FrozenModel) -> None:\n    global model, label_encoders\n    frozen_models.disease_model.load_model(39)\n    # frozen_models.disease_model.evaluate()\n    # with open(\"models/ensembled_model_frozen.pkl\", \"rb\") as ensembled_weights:\n    #     frozen_models.ensembled_model = pickle.load(ensembled_weights)\n    # Load model and encoders\n    with open(\"models/crop_production_model.pkl\", \"rb\") as f:\n        model = pickle.load(f)\n    with open(\"models/label_encoders.pkl\", \"rb\") as f:",
         "detail": "main",
         "documentation": {}
     },
@@ -1927,20 +1945,38 @@
         "documentation": {}
     },
     {
-        "label": "InputParameters",
+        "label": "DiseaseInputParameters",
         "kind": 6,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "class InputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\n@app.post(\"/predict\", response_model=OutputParameters)\nasync def predict(input_parameters: InputParameters):",
+        "peekOfCode": "class DiseaseInputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass DiseaseOutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\nclass CropInputData(BaseModel):\n    State_Name: str",
         "detail": "server",
         "documentation": {}
     },
     {
-        "label": "OutputParameters",
+        "label": "DiseaseOutputParameters",
         "kind": 6,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "class OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\n@app.post(\"/predict\", response_model=OutputParameters)\nasync def predict(input_parameters: InputParameters):\n    # yield_production_estimate = predictor.predict_yield(input_parameters)\n    disease_prediction = predictor.EnsembledPredictor.predict_disease(input_parameters.images)\n    return OutputParameters(disease_prediction=disease_prediction)\n@app.post(\"/predict_production\", response_model=OutputParameters)\nasync def predict_production(input_parameters: InputParameters):",
+        "peekOfCode": "class DiseaseOutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\nclass CropInputData(BaseModel):\n    State_Name: str\n    District_Name: str\n    Crop_Year: int\n    Season: str\n    Crop: str\n    Area: float",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "CropInputData",
+        "kind": 6,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "class CropInputData(BaseModel):\n    State_Name: str\n    District_Name: str\n    Crop_Year: int\n    Season: str\n    Crop: str\n    Area: float\nclass CropOutputData(BaseModel):\n    production: float\n@app.post(\"/predict_disease\", response_model=DiseaseOutputParameters)",
+        "detail": "server",
+        "documentation": {}
+    },
+    {
+        "label": "CropOutputData",
+        "kind": 6,
+        "importPath": "server",
+        "description": "server",
+        "peekOfCode": "class CropOutputData(BaseModel):\n    production: float\n@app.post(\"/predict_disease\", response_model=DiseaseOutputParameters)\nasync def predict(input_parameters: DiseaseInputParameters):\n    # yield_production_estimate = predictor.predict_yield(input_parameters)\n    disease_prediction = predictor.EnsembledPredictor.predict_disease(input_parameters.images)\n    return DiseaseOutputParameters(disease_prediction=disease_prediction)\n@app.post(\"/predict_production\", response_model=CropOutputData)\nasync def predict_production(input_parameters: CropInputData):\n    print(f\"input parameters: {input_parameters}\")",
         "detail": "server",
         "documentation": {}
     },
@@ -1949,7 +1985,7 @@
         "kind": 5,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "app = FastAPI()\npredictor = main.EnsembledPredictor()\nclass InputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str",
+        "peekOfCode": "app = FastAPI()\npredictor = main.EnsembledPredictor()\nclass DiseaseInputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass DiseaseOutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str",
         "detail": "server",
         "documentation": {}
     },
@@ -1958,7 +1994,7 @@
         "kind": 5,
         "importPath": "server",
         "description": "server",
-        "peekOfCode": "predictor = main.EnsembledPredictor()\nclass InputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass OutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\n@app.post(\"/predict\", response_model=OutputParameters)",
+        "peekOfCode": "predictor = main.EnsembledPredictor()\nclass DiseaseInputParameters(BaseModel):\n    crop_name: str\n    weather_type: str\n    fertilizer_type: str\n    images: list[str]\nclass DiseaseOutputParameters(BaseModel):\n    yield_production_estimate: float\n    disease_prediction: str\nclass CropInputData(BaseModel):",
         "detail": "server",
         "documentation": {}
     }

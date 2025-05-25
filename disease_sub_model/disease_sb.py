@@ -328,7 +328,7 @@ class DiseasePercentageModel:
 import os
 from collections import Counter
 class DiseaseAnalyzer:
-    def __init__(self):
+    def __init__(self, config: DiseaseClassifierConfig):
         classifier = DiseaseClassifier(config)
         model_name: str = classifier.config.model_save_path
         if not os.path.exists(model_name):

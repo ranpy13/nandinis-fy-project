@@ -22,7 +22,7 @@ from yield_sub_model.yield_sb import CropYieldPredictor, ModelType as YieldModel
 
 from utils.logger_util import setup_logger
 
-logger = setup_logger(__name__)
+logger = setup_logger(logger_name= __name__)
 
 @dataclass
 class EnsembleInput:
@@ -84,7 +84,7 @@ class EnsembleModel:
             self.yield_model = YieldPredictor()
             
             # Load and train models
-            self._initialize_models()
+            # self._initialize_models()
             
             # Initialize scaler for feature normalization
             self.scaler = StandardScaler()

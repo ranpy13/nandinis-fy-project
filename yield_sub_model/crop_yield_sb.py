@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 
 from utils.logger_util import setup_logger
 
-logger = setup_logger(__name__)
+logger = setup_logger(logger_name=__name__)
 
 @dataclass
 class ModelMetrics:
